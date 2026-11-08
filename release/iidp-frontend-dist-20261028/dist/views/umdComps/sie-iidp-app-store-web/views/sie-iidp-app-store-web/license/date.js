@@ -1,0 +1,1 @@
+const dateFormat=t=>{if(t.length<11)return t;var e=t.getFullYear(),r=t.getMonth()+1;r=r<10?"0"+r:r;var a=t.getDate();return e+"-"+r+"-"+(a=a<10?"0"+a:a)};export default dateFormat;

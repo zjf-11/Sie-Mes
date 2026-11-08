@@ -1,0 +1,30 @@
+{
+  "name": "main",
+  "assets": {
+    "js": [
+      "filePreview.umd.min.js?t=1712564604832"
+    ],
+    "css": [
+      "style.css?t=1712564604832"
+    ],
+    "map": [],
+    "uncase": [],
+    "static-resource": [],
+    "views": [
+      "views/filePreview/filePrevew.js?t=1712564604832",
+      "views/filePreview/index.js?t=1712564604832"
+    ],
+    "resource": [],
+    "config": [
+      "config/filePreview/app.json?t=1712564604832"
+    ],
+    "model-views": []
+  },
+  "global": {},
+  "effectPageIds": {
+    "include": [
+      "techFilePreview"
+    ]
+  },
+  "__packageTime": "2024-4-8 16:23:24"
+}

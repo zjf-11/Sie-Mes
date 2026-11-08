@@ -1,0 +1,1 @@
+export default{user_head_img_extend_view:{type:"replace",selector:{attr:"id",value:"container_meta_header_user_icon"},view:{view:{created:{openView:{showType:"dropdown",preId:"custom3_rbac_user_001_",model:"rbac_role",type:"form,grid,search"},dropdownStyle:{marginLeft:"-3.2rem"},items:[{id:"dropdown_control",type:"container"}]}}}}};

@@ -1,0 +1,8 @@
+{
+    "tenantWeb": {
+        "switchingSuccessful": "Switching was successful",
+        "enterTenantName": "Please enter the tenant name",
+        "offline": "Offline"
+    }
+}
+  

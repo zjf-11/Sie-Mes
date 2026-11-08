@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkiidp_frontend_demo=self.webpackChunkiidp_frontend_demo||[]).push([[357],{3357(e){e.exports=JSON.parse('{"global":{},"effectPageIds":{"include":["page_meta_index"]}}')}}]);

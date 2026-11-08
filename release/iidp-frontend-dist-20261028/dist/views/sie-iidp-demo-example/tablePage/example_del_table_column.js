@@ -1,0 +1,1 @@
+export default{demo_example_del_table_column_extend_view_1:{selector:{attr:"id",value:"demo_example_unit_ext_menu_table_main_table"},type:"custom",beforeOperate:(e,t,_)=>{_.element.items.splice(2,1)},view:{}}};

@@ -1,0 +1,1 @@
+import{tableMultiSaveBtn}from"../utils/tableMultiSave";export default{extend_table_multi_save_btn:{type:"custom",selector:{attr:"id",pre:["demo_example_unit_ext_menu_"],value:"table_toolbar_rowEdit_save"},beforeOperate:(e,t,a)=>(tableMultiSaveBtn(e,t,a),t.view),view:{}}};

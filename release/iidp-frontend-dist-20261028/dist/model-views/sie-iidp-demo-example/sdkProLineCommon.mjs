@@ -1,0 +1,1 @@
+window.Tech||(window.Tech={}),window.Tech.sdkProLineTestFn=n=>(console.log(" === 在自定义app的挂全局的公共方法： window.Tech.sdkProLineTestFn == ",n,window),n);

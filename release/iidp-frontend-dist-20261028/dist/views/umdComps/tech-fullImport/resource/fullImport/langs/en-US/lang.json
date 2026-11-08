@@ -1,0 +1,46 @@
+{
+    "fullImport": {
+      "template": "Download template",
+      "verification": "Accuracy verification",
+      "force": "Force import",
+      "confirm": "Confirm Import",
+      "psData": "Please select at least one piece of data",
+      
+      "successful": "Import successful",
+      "file": "Import file",
+
+      "recognized":"co recognized",
+      "piece-data":"piece of data",
+      "dvSuccessful":"Data validation successful",
+      "dvFailed":"Data validation failed",
+
+      "noData": "There is currently no data available",
+      "hasBeen": "The export task has been generated and can be accessed",
+      "task": "Export Task",
+      "view": "View",
+      "upload": "Upload",
+      
+      "limit": "The file is too large! The uploaded file cannot exceed 10M.",
+      "result": "Verification result",
+      "import-data": "Import data",
+      "failed-data": "Verification failed data",
+      "verificationResults": "Export verification results",
+
+      "exportComponents": "Export components",
+      "search": "Search",
+      "download": "Download",
+      "businessType": "Business type",
+      "exportStatus": "Export status",
+      "creator": "Creator",
+      "fileName": "file name",
+      "creationTime": "Creation time",
+      "exportCompletionTime": "Export completion time",
+      "expirationTime": "expiration time",
+      "fileKey": "file key",
+      "message": "Reminder message",
+      "isDownload": "Can I download it?",
+      "list": "List",
+      "form": "Form"
+    }
+  }
+  

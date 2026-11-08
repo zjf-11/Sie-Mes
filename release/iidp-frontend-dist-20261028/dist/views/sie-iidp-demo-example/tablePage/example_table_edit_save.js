@@ -1,0 +1,1 @@
+import{tableMultiSave}from"../utils/tableMultiSave";export default{extend_table_multi_save:{type:"custom",selector:{attr:"id",pre:["demo_example_unit_ext_menu_"],value:"table_main_table"},beforeOperate:(e,t,a)=>(tableMultiSave(e,t,a),t.view),view:{}}};

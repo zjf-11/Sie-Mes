@@ -1,0 +1,12 @@
+{
+  "global": {
+    "supportLangs": {
+      "zh-CN": {
+        "name": "中文(简体)"
+      },
+      "en-US": {
+        "name": "英语(美国)"
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "main",
+  "assets": {
+    "js": [
+      "fullImport.umd.min.js?t=1717580329644"
+    ],
+    "css": [
+      "style.css?t=1717580329644"
+    ],
+    "map": [],
+    "uncase": [],
+    "static-resource": [],
+    "views": [
+      "views/fullImport/importDirective.js?t=1717580329644",
+      "views/fullImport/index.js?t=1717580329644"
+    ],
+    "resource": [
+      "resource/fullImport/langs/en-US/css.css?t=1717580329644",
+      "resource/fullImport/langs/en-US/lang.json?t=1717580329644",
+      "resource/fullImport/langs/zh-CN/css.css?t=1717580329644",
+      "resource/fullImport/langs/zh-CN/lang.json?t=1717580329644"
+    ],
+    "config": [
+      "config/fullImport/app.json?t=1717580329644"
+    ],
+    "model-views": []
+  },
+  "global": {
+    "supportLangs": {
+      "zh-CN": {
+        "name": "中文(简体)"
+      },
+      "en-US": {
+        "name": "英语(美国)"
+      }
+    }
+  },
+  "__packageTime": "2024-6-5 17:38:49"
+}

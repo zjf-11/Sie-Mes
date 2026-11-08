@@ -1,0 +1,1 @@
+export default{demo_example_detail_top_save_extend_view:{type:"merge",selector:{attr:"id",value:"demo_example_unit_ext_menu_form_main_detail_top_save"},view:{style:{marginRight:"20px"},bind_on_click:async e=>{let _=e.self.$select("demo_example_unit_ext_menu_form_main_detail_top_common"),t=await _.instance.submit();console.log(t)}}}};

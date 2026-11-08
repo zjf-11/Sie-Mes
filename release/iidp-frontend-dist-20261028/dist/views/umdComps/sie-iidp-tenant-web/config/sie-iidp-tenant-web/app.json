@@ -1,0 +1,35 @@
+{
+  "global": {
+    "supportLangs": {
+      "zh-CN": {
+        "name": "中文(简体)"
+      },
+      "en-US": {
+        "name": "English"
+      },
+      "vi-VN": {
+        "name": "Việt nam"
+      }
+    }
+  },
+  "name": "sie-iidp-tenant",
+  "comp_name": "sie-iidp-tenant-web",
+  "version": "3.0.1-RELEASE",
+  "displayName": "多租户",
+  "category": "base",
+  "categoryDesc": "基础模块",
+  "product": "base",
+  "productDesc": "工业互联网平台",
+  "tag": "master",
+  "sub": {
+    "tenant": {
+      "effectPaths": {
+        "includeRegExp": "^/base/tenants/"
+      }
+    }
+  },
+  "effectPageIds": {
+    "includeRegExp": ""
+  },
+  "extension_scope": "PLATFORM"
+}

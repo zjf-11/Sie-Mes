@@ -1,0 +1,1 @@
+export default{scrollbar_thumb_extend_view:{type:"custom",selector:{attr:"id",value:"page_meta_index"},beforeOperate:(e,t,a)=>{a.element.css='div[viewtype="table"] ::-webkit-scrollbar-thumb {background: #ff8800}'}}};

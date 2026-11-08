@@ -1,0 +1,1 @@
+import location_tivew from"./header/header_location_tivew_extend.js";export default{...location_tivew};

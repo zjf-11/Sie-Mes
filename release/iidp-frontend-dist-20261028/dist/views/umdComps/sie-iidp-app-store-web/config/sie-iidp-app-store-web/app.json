@@ -1,0 +1,31 @@
+{
+  "global": {
+    "supportLangs": {
+      "zh-CN": {
+        "name": "中文(简体)"
+      },
+      "en-US": {
+        "name": "English"
+      },
+      "vi-VN": {
+        "name": "Việt nam"
+      }
+    }
+  },
+  "effectPaths": {
+    "includeRegExp": "^/base/apps/"
+  },
+  "name": "sie-iidp-app-store",
+  "comp_name": "sie-iidp-app-store-web",
+  "version": "3.0.0-RELEASE",
+  "displayName": "应用市场",
+  "company": "sie",
+  "category": "base",
+  "categoryDesc": "基础模块",
+  "product": "base",
+  "productDesc": "工业互联网平台",
+  "description": "应用市场",
+  "summary": "应用市场",
+  "tag": "master",
+  "license": "LGPL 3.0"
+}

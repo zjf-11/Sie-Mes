@@ -1,0 +1,90 @@
+{
+  "self": {
+    "master": {
+      "sie-iidp-demo-books": "/umdComps/tech-sie-iidp-demo-books/config/app.json",
+      "sie-iidp-demo-exam": "/umdComps/tech-sie-iidp-demo-exam/config/app.json",
+      "sie-iidp-demo-example": "/umdComps/tech-sie-iidp-demo-example/config/app.json",
+      "sie-iidp-app-store": "/umdComps/sie-iidp-app-store-web/config/app.json",
+      "sie-iidp-iam": "/umdComps/sie-iidp-iam-web/config/app.json",
+      "sie-iidp-tenant": "/umdComps/sie-iidp-tenant-web/config/app.json",
+      "sie-iidp-dev-center": "/umdComps/sie-iidp-dev-center-web/config/app.json",
+      "sie-iidp-i18n": "/umdComps/sie-iidp-i18n-web/config/app.json"
+    }
+  },
+  "apps": {
+    "sie-iidp-demo-books": {
+      "master": {
+        "tech-sie-iidp-demo-books": "/umdComps/tech-sie-iidp-demo-books/config/app.json"
+      }
+    },
+    "sie-iidp-demo-exam": {
+      "master": {
+        "tech-sie-iidp-demo-exam": "/umdComps/tech-sie-iidp-demo-exam/config/app.json"
+      }
+    },
+    "sie-iidp-demo-example": {
+      "master": {
+        "tech-sie-iidp-demo-example": "/umdComps/tech-sie-iidp-demo-example/config/app.json"
+      }
+    },
+    "fullImport": {
+      "master": {
+        "tech-fullImport": "/umdComps/tech-fullImport/config/app.json"
+      }
+    },
+    "filePreview": {
+      "master": {
+        "tech-filePreview": "/umdComps/tech-filePreview/config/app.json"
+      }
+    },
+    "kkFileView": {
+      "master": {
+        "tech-kkFileView": "/umdComps/tech-kkFileView/config/app.json"
+      }
+    },
+    "attachment": {
+      "master": {
+        "tech-attachment": "/umdComps/tech-attachment/config/app.json"
+      }
+    },
+    "sie-iidp-app-store": {
+      "master": {
+        "sie-iidp-app-store-web": "/umdComps/sie-iidp-app-store-web/config/app.json"
+      }
+    },
+    "sie-iidp-iam": {
+      "master": {
+        "sie-iidp-iam-web": "/umdComps/sie-iidp-iam-web/config/app.json"
+      }
+    },
+    "sie-iidp-tenant": {
+      "master": {
+        "sie-iidp-tenant-web": "/umdComps/sie-iidp-tenant-web/config/app.json"
+      }
+    },
+    "sie-iidp-dev-center": {
+      "master": {
+        "sie-iidp-dev-center-web": "/umdComps/sie-iidp-dev-center-web/config/app.json"
+      }
+    },
+    "sie-iidp-i18n": {
+      "master": {
+        "sie-iidp-i18n-web": "/umdComps/sie-iidp-i18n-web/config/app.json"
+      }
+    }
+  },
+  "templateApp": "TechMetaPage",
+  "global": {
+    "master": {
+      "apiHost": "/api"
+    },
+    "routerBase": "/iidp/"
+  },
+  "frontVersion": "1.0.1",
+  "loginLoadedApps": [
+    "sie-iidp-iam-web",
+    "sie-iidp-tenant-web",
+    "sie-iidp-app-store-web",
+    "sie-iidp-i18n-web"
+  ]
+}

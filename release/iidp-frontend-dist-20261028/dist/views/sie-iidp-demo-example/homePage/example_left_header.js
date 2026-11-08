@@ -1,0 +1,1 @@
+export default{header_left_extend_view:{type:"after",selector:{attr:"id",value:"container_meta_header_left"},view:{type:"text",value:"测试extendView",style:{color:"#07ff00"}}}};

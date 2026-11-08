@@ -1,0 +1,1 @@
+export default{demo_example_search_name_extend_view:{type:"replace",selector:{attr:"id",value:"demo_example_unit_ext_menu_form_main_table_search_common_items_0_items_unitName"},view:{view:{created:{openView:{showType:"dropdown",preId:"custom_demo_example_unit_ext_001_",model:"example_unit",type:"grid"}}}}}};

@@ -1,0 +1,1 @@
+import filePreview from"./filePrevew";export default{...filePreview};

@@ -1,0 +1,15 @@
+{
+  "global": {},
+  "effectPaths": {
+    "includeRegExp": "^/base/developer"
+  },
+  "name": "sie-iidp-dev-center",
+  "comp_name": "sie-iidp-dev-center-web",
+  "version": "3.0.0-RELEASE",
+  "displayName": "开发者中心",
+  "category": "base",
+  "categoryDesc": "基础模块",
+  "product": "base",
+  "productDesc": "工业互联网平台",
+  "tag": "master"
+}

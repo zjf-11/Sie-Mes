@@ -1,0 +1,1 @@
+export default{tech_kk_file_view_extend_view:{type:"append",selector:{attr:"id",value:"template-meta-page-app"},view:{type:"page",id:"techFileView",dataSource:{filePath:"",fileType:"",fileId:"",filePrefix:"",placement:""},items:[{type:"container",items:[{id:"tech-kk-file-view",type:"kk-file-view",name:"preview"}]}]}}};

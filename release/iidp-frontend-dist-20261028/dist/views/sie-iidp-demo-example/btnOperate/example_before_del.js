@@ -1,0 +1,1 @@
+export default{demo_example_table_btn_delete_extend_view:{type:"custom",selector:{attr:"id",value:"demo_example_unit_ext_menu_table_toolbar_delete"},beforeOperate:(e,t,l)=>(l.element.bind_on_click=e=>{e.self.$ds.selectedTableData[0]||e.self.$ds.checkedDataList[0]||null?window.ELEMENT.Message.error("不能删除第一条"):l.originElement.bind_on_click(e)},t.view),view:{}}};

@@ -1,0 +1,1 @@
+export default{test_drawer_extend_view:{selector:{attr:"id",value:"demo_example_unit_fmk_menu_table_toolbar_create"},type:"after",view:{type:"button",value:"openView扩展",style:{color:"#000",background:"#fff",border:0,fontSize:"0.14rem"},view:{click:{openView:{showType:"drawer",preId:"demo_example_unit_fmk_",model:"example_unit_fmk",type:"form"}}}}}};

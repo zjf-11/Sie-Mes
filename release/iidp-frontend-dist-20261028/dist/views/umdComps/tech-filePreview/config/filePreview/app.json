@@ -1,0 +1,6 @@
+{
+	"global": {},
+	"effectPageIds": {
+		"include": ["techFilePreview"]
+	}
+}

@@ -1,0 +1,61 @@
+{
+  "name": "sie-iidp-i18n",
+  "assets": {
+    "js": [
+      "sie-iidp-i18n-web.umd.min.js?t=1766648246919"
+    ],
+    "css": [
+      "style.css?t=1766648246919"
+    ],
+    "map": [],
+    "uncase": [],
+    "other": [],
+    "static-resource": [],
+    "views": [
+      "views/sie-iidp-i18n-web/index.js?t=1766648246919",
+      "views/sie-iidp-i18n-web/language/languageExtend.js?t=1766648246919",
+      "views/sie-iidp-i18n-web/languageOptionsExtend/images/globel.svg?t=1766648246919",
+      "views/sie-iidp-i18n-web/languageOptionsExtend/langsOptionsExtend.js?t=1766648246919",
+      "views/sie-iidp-i18n-web/multilingual/images/globel.svg?t=1766648246919",
+      "views/sie-iidp-i18n-web/multilingual/multilingualExtend.js?t=1766648246919",
+      "views/sie-iidp-i18n-web/translationManagement/exportDialog.js?t=1766648246919",
+      "views/sie-iidp-i18n-web/translationManagement/importDialog.js?t=1766648246919",
+      "views/sie-iidp-i18n-web/translationManagement/README.md?t=1766648246919",
+      "views/sie-iidp-i18n-web/translationManagement/translationManagement.js?t=1766648246919"
+    ],
+    "resource": [
+      "resource/sie-iidp-i18n-web/langs/en-US/lang.json?t=1766648246919",
+      "resource/sie-iidp-i18n-web/langs/vi-VN/lang.json?t=1766648246919",
+      "resource/sie-iidp-i18n-web/langs/zh-CN/lang.json?t=1766648246919"
+    ],
+    "config": [
+      "config/sie-iidp-i18n-web/app.json?t=1766648246919"
+    ],
+    "model-views": []
+  },
+  "global": {
+    "supportLangs": {
+      "zh-CN": {
+        "name": "中文(简体)"
+      },
+      "en-US": {
+        "name": "English"
+      },
+      "vi-VN": {
+        "name": "Việt nam"
+      }
+    }
+  },
+  "comp_name": "sie-iidp-i18n-web",
+  "version": "3.0.0-RELEASE",
+  "displayName": "国际化app",
+  "company": "sie",
+  "category": "base",
+  "categoryDesc": "基础模块",
+  "product": "base",
+  "productDesc": "工业互联网平台",
+  "description": "国际化app",
+  "summary": "国际化app",
+  "tag": "master",
+  "__packageTime": "2025-12-25 15:37:26"
+}

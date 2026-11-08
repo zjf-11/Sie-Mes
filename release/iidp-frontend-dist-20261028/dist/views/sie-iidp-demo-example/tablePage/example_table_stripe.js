@@ -1,0 +1,1 @@
+export default{demo_example_table_stripe_extend_view:{type:"merge",selector:{attr:"id",value:"demo_example_unit_ext_menu_table_main_table"},view:{gridOptions:{rowStyle:({row:e,rowIndex:t})=>{if(t%2==1)return{background:"#ff8800"}}}}}};

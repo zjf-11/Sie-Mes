@@ -1,0 +1,27 @@
+{
+  "global": {
+    "supportLangs": {
+      "zh-CN": {
+        "name": "中文(简体)"
+      },
+      "en-US": {
+        "name": "English"
+      },
+      "vi-VN": {
+        "name": "Việt nam"
+      }
+    }
+  },
+  "name": "sie-iidp-i18n",
+  "comp_name": "sie-iidp-i18n-web",
+  "version": "3.0.0-RELEASE",
+  "displayName": "国际化app",
+  "company": "sie",
+  "category": "base",
+  "categoryDesc": "基础模块",
+  "product": "base",
+  "productDesc": "工业互联网平台",
+  "description": "国际化app",
+  "summary": "国际化app",
+  "tag": "master"
+}

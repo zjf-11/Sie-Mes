@@ -1,0 +1,1 @@
+export default{table_checkbox_extend_view:{selector:{attr:"id",value:"demo_example_course_menu_tab_studentList_table_main_table"},type:"custom",beforeOperate:(e,t,_)=>(_.element.checkbox="multiple_2",_.element.checkboxWidth=55,t.view),view:{}}};

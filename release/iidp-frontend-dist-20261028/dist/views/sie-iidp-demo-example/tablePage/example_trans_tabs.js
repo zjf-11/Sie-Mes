@@ -1,0 +1,1 @@
+export default{demo_example_trans_tabs_extend_view:{selector:{attr:"id",value:"demo_example_unit_ext_menu_container_table_search_items_1"},type:"replace",beforeOperate:(e,t,a)=>(a.originElement.name="基础信息",t.view.items.unshift(a.originElement),t.view),view:{type:"tabs",id:"tabs_001",name:"标签页",activeId:"",items:[{id:"test_001",name:"标签xx",type:"button",value:"测试"}]}}};

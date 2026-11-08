@@ -1,0 +1,45 @@
+{
+  "fullImport": {
+    "template": "下载模板",
+    "verification": "准确性校验",
+    "force": "强制导入",
+    "confirm": "确认导入",
+    "psData": "请至少选中一条数据",
+
+    "successful": "导入成功",
+    "file": "导入文件",
+
+    "recognized": "共识别",
+    "piece-data": "条数据",
+    "dvSuccessful": "条数据校验成功",
+    "dvFailed": "条数据校验失败",
+
+    "noData": "暂无数据",
+    "hasBeen": "导出任务已生成，可进入",
+    "task": "导出任务",
+    "view": "查看",
+    "upload": "上传",
+
+    "limit": "文件过大！上传文件不能超过10M。",
+    "result": "校验结果",
+    "import-data": "导入数据",
+    "failed-data": "校验失败数据",
+    "verificationResults": "导出校验结果",
+
+    "exportComponents": "导出组件",
+    "search": "搜索",
+    "download": "下载",
+    "businessType": "业务类型",
+    "exportStatus": "导出状态",
+    "creator": "创建人",
+    "fileName": "文件名",
+    "creationTime": "创建时间",
+    "exportCompletionTime": "导出完成时间",
+    "expirationTime": "失效时间",
+    "fileKey": "文件key",
+    "message": "提示信息",
+    "isDownload": "是否可以下载",
+    "list": "列表",
+    "form": "表单"
+  }
+}

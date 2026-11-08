@@ -1,0 +1,1 @@
+import importDirective from"./importDirective";export default{...importDirective};

@@ -1,0 +1,24 @@
+.idea
+*.db
+*.log
+*.json
+*.xml
+/**/*.log
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.dylib
+
+# Test binary, built with `go mytest -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+.vscode
+
+doc/*.so
+conf/*.pem
+conf/license
+/doc/java/src/main/main.iml
+/doc/java/src/test/test.iml

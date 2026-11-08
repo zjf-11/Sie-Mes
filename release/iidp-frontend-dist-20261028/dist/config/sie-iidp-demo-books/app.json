@@ -1,0 +1,6 @@
+{
+  "global": {},
+  "effectPageIds": {
+		"include":["page_meta_index"]
+	}
+}

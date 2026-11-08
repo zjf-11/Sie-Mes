@@ -1,0 +1,68 @@
+{
+  "name": "sie-iidp-app-store",
+  "assets": {
+    "js": [
+      "sie-iidp-app-store-web.umd.min.js?t=1766646142825"
+    ],
+    "css": [
+      "style.css?t=1766646142825"
+    ],
+    "map": [],
+    "uncase": [],
+    "other": [
+      "eb40ee71932cdff442e7.png?t=1766646142825",
+      "612f21d76453b4138540.png?t=1766646142825",
+      "ef8a7f6386c2a50b8c64.png?t=1766646142825"
+    ],
+    "static-resource": [
+      "static-resource/sie-iidp-app-store-web/defaultIcon.png?t=1766646142825",
+      "static-resource/sie-iidp-app-store-web/info.png?t=1766646142825",
+      "static-resource/sie-iidp-app-store-web/infoo.png?t=1766646142825"
+    ],
+    "views": [
+      "views/sie-iidp-app-store-web/index.js?t=1766646142825",
+      "views/sie-iidp-app-store-web/license/date.js?t=1766646142825",
+      "views/sie-iidp-app-store-web/license/validateFn.js?t=1766646142825",
+      "views/sie-iidp-app-store-web/rbacApplyStore/tview_app_store.js?t=1766646142825"
+    ],
+    "resource": [
+      "resource/sie-iidp-app-store-web/langs/en-US/css.css?t=1766646142825",
+      "resource/sie-iidp-app-store-web/langs/en-US/lang.json?t=1766646142825",
+      "resource/sie-iidp-app-store-web/langs/zh-CN/css.css?t=1766646142825",
+      "resource/sie-iidp-app-store-web/langs/zh-CN/lang.json?t=1766646142825"
+    ],
+    "config": [
+      "config/sie-iidp-app-store-web/app.json?t=1766646142825"
+    ],
+    "model-views": []
+  },
+  "global": {
+    "supportLangs": {
+      "zh-CN": {
+        "name": "中文(简体)"
+      },
+      "en-US": {
+        "name": "English"
+      },
+      "vi-VN": {
+        "name": "Việt nam"
+      }
+    }
+  },
+  "effectPaths": {
+    "includeRegExp": "^/base/apps/"
+  },
+  "comp_name": "sie-iidp-app-store-web",
+  "version": "3.0.0-RELEASE",
+  "displayName": "应用市场",
+  "company": "sie",
+  "category": "base",
+  "categoryDesc": "基础模块",
+  "product": "base",
+  "productDesc": "工业互联网平台",
+  "description": "应用市场",
+  "summary": "应用市场",
+  "tag": "master",
+  "license": "LGPL 3.0",
+  "__packageTime": "2025-12-25 15:2:22"
+}

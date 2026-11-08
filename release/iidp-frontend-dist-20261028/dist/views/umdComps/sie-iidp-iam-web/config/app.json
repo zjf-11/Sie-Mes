@@ -1,0 +1,109 @@
+{
+  "name": "sie-iidp-iam",
+  "assets": {
+    "js": [
+      "sie-iidp-iam-web.umd.min.js?t=1773909160744"
+    ],
+    "css": [
+      "style.css?t=1773909160744"
+    ],
+    "map": [],
+    "uncase": [],
+    "other": [],
+    "static-resource": [
+      "static-resource/sie-iidp-iam-web/sub/action/sie-iidp-iam-web--sub--action.umd.min.js?t=1773909160744",
+      "static-resource/sie-iidp-iam-web/sub/action/sie-iidp-iam-web--sub--action.umd.min.js.map?t=1773909160744",
+      "static-resource/sie-iidp-iam-web/sub/base-interface/sie-iidp-iam-web--sub--base-interface.umd.min.js?t=1773909160744",
+      "static-resource/sie-iidp-iam-web/sub/base-interface/sie-iidp-iam-web--sub--base-interface.umd.min.js.map?t=1773909160744",
+      "static-resource/sie-iidp-iam-web/sub/permission/sie-iidp-iam-web--sub--permission.umd.min.js?t=1773909160744",
+      "static-resource/sie-iidp-iam-web/sub/permission/sie-iidp-iam-web--sub--permission.umd.min.js.map?t=1773909160744",
+      "static-resource/sie-iidp-iam-web/sub/scope/sie-iidp-iam-web--sub--scope.umd.min.js?t=1773909160744",
+      "static-resource/sie-iidp-iam-web/sub/scope/sie-iidp-iam-web--sub--scope.umd.min.js.map?t=1773909160744"
+    ],
+    "views": [
+      "views/sie-iidp-iam-web/actionScopeNew/relatedRoleDialog.js?t=1773909160744",
+      "views/sie-iidp-iam-web/actionScopeNew/shareUserManagement.js?t=1773909160744",
+      "views/sie-iidp-iam-web/actionScopeNew/userAndUserGroupManagement.js?t=1773909160744",
+      "views/sie-iidp-iam-web/controllablePermissions/tview_controllable_permissions.js?t=1773909160744",
+      "views/sie-iidp-iam-web/index.js?t=1773909160744",
+      "views/sie-iidp-iam-web/permissionManagement/dataPermission/tivew_data_permission_main.js?t=1773909160744",
+      "views/sie-iidp-iam-web/permissionManagement/dataPermission/tivew_role_permission_main.js?t=1773909160744",
+      "views/sie-iidp-iam-web/permissionManagement/dataPermission/tivew_tab_action_dimension.js?t=1773909160744",
+      "views/sie-iidp-iam-web/permissionManagement/dataPermission/tivew_tab_column_permission.js?t=1773909160744",
+      "views/sie-iidp-iam-web/permissionManagement/dataPermission/tivew_tab_row_permission.js?t=1773909160744",
+      "views/sie-iidp-iam-web/permissionManagement/functionalPermissions/tview_permission_management_custom_permissions‌.js?t=1773909160744",
+      "views/sie-iidp-iam-web/permissionManagement/functionalPermissions/tview_permission_management_functional_permissions‌.js?t=1773909160744",
+      "views/sie-iidp-iam-web/permissionManagement/functionalPermissions/tview_permission_management_service_permissions‌.js?t=1773909160744",
+      "views/sie-iidp-iam-web/permissionManagement/readme.md?t=1773909160744",
+      "views/sie-iidp-iam-web/permissionManagement/tview_permission_management.js?t=1773909160744",
+      "views/sie-iidp-iam-web/roleManagement/associatedUsers/tview_role_management_associated_users.js?t=1773909160744",
+      "views/sie-iidp-iam-web/roleManagement/functionalPermissions/tview_role_management_custom_permissions‌.js?t=1773909160744",
+      "views/sie-iidp-iam-web/roleManagement/functionalPermissions/tview_role_management_functional_permissions‌.js?t=1773909160744",
+      "views/sie-iidp-iam-web/roleManagement/functionalPermissions/tview_role_management_service_permissions‌.js?t=1773909160744",
+      "views/sie-iidp-iam-web/roleManagement/readme.md?t=1773909160744",
+      "views/sie-iidp-iam-web/roleManagement/tview_role_management.js?t=1773909160744",
+      "views/sie-iidp-iam-web/tview_rbac_user_app_menu.js?t=1773909160744",
+      "views/sie-iidp-iam-web/tview_rbac_user_app_menu_share.js?t=1773909160744",
+      "views/sie-iidp-iam-web/tview_role_detail_tabs_bak.js?t=1773909160744",
+      "views/sie-iidp-iam-web/tview__base__rbac_role_bak.js?t=1773909160744"
+    ],
+    "resource": [
+      "resource/sie-iidp-iam-web/langs/en-US/lang.json?t=1773909160744",
+      "resource/sie-iidp-iam-web/langs/vi-VN/lang.json?t=1773909160744",
+      "resource/sie-iidp-iam-web/langs/zh-CN/lang.json?t=1773909160744"
+    ],
+    "config": [
+      "config/sie-iidp-iam-web/app.json?t=1773909160744"
+    ],
+    "model-views": []
+  },
+  "global": {
+    "supportLangs": {
+      "zh-CN": {
+        "name": "中文(简体)"
+      },
+      "en-US": {
+        "name": "English"
+      },
+      "vi-VN": {
+        "name": "Việt nam"
+      }
+    }
+  },
+  "effectPaths": {
+    "includeRegExp": "^/(base/tenants)|(base/developer)|(base/rbac_user_permission_menu)|(base/master-data)"
+  },
+  "comp_name": "sie-iidp-iam-web",
+  "version": "3.0.1-UAT.3",
+  "displayName": "权限",
+  "category": "base",
+  "categoryDesc": "基础模块",
+  "product": "base",
+  "productDesc": "工业互联网平台",
+  "tag": "master",
+  "extension_scope": "PLATFORM",
+  "sub": {
+    "action": {
+      "effectPaths": {
+        "includeRegExp": "^/(base/rbac_user_permission_menu/tenant_action_scope)|(base/rbac_user_permission_menu/tenant_action_dimension)"
+      }
+    },
+    "base-interface": {
+      "notDepParent": true
+    },
+    "permission": {
+      "effectPaths": {
+        "includeRegExp": "^/base/rbac_user_permission_menu/tenant_custom_per"
+      }
+    },
+    "scope": {
+      "effectPageIds": {
+        "exclude": [
+          "page_meta_login"
+        ]
+      },
+      "notDepParent": true
+    }
+  },
+  "__packageTime": "2026-3-19 16:32:41"
+}

@@ -1,0 +1,1 @@
+export default{sidebar_extend_view:{type:"before",selector:{attr:"id",value:"sidebar_about_button"},view:{type:"text",style:{color:"#07ff00",position:"absolute",bottom:"0.8rem"},value:"看这里！！"}}};

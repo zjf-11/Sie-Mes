@@ -1,0 +1,40 @@
+{
+  "name": "main",
+  "assets": {
+    "js": [
+      "kkFileView.umd.min.js?t=1721380496033"
+    ],
+    "css": [
+      "style.css?t=1721380496033"
+    ],
+    "map": [],
+    "uncase": [],
+    "static-resource": [],
+    "views": [
+      "views/kkFileView/index.js?t=1721380496033",
+      "views/kkFileView/kkFileView.js?t=1721380496033",
+      "views/kkFileView/kkFileViewDirective.js?t=1721380496033"
+    ],
+    "resource": [
+      "resource/kkFileView/langs/en-US/css.css?t=1721380496033",
+      "resource/kkFileView/langs/en-US/lang.json?t=1721380496033",
+      "resource/kkFileView/langs/zh-CN/css.css?t=1721380496033",
+      "resource/kkFileView/langs/zh-CN/lang.json?t=1721380496033"
+    ],
+    "config": [
+      "config/kkFileView/app.json?t=1721380496033"
+    ],
+    "model-views": []
+  },
+  "global": {
+    "supportLangs": {
+      "zh-CN": {
+        "name": "中文(简体)"
+      },
+      "en-US": {
+        "name": "英语(美国)"
+      }
+    }
+  },
+  "__packageTime": "2024-7-19 17:14:56"
+}

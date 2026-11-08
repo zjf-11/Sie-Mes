@@ -1,0 +1,66 @@
+{
+  "name": "sie-iidp-tenant",
+  "assets": {
+    "js": [
+      "sie-iidp-tenant-web.umd.min.js?t=1770287872321"
+    ],
+    "css": [],
+    "map": [],
+    "uncase": [],
+    "other": [],
+    "static-resource": [
+      "static-resource/sie-iidp-tenant-web/sub/tenant/sie-iidp-tenant-web--sub--tenant.umd.min.js?t=1770287872321",
+      "static-resource/sie-iidp-tenant-web/sub/tenant/sie-iidp-tenant-web--sub--tenant.umd.min.js.map?t=1770287872321"
+    ],
+    "views": [
+      "views/sie-iidp-tenant-web/components/resetPassword.js?t=1770287872321",
+      "views/sie-iidp-tenant-web/header/header_location_tivew_extend.js?t=1770287872321",
+      "views/sie-iidp-tenant-web/index.js?t=1770287872321"
+    ],
+    "resource": [
+      "resource/sie-iidp-tenant-web/image/defaultIcon.svg?t=1770287872321",
+      "resource/sie-iidp-tenant-web/langs/en-US/css.css?t=1770287872321",
+      "resource/sie-iidp-tenant-web/langs/en-US/lang.json?t=1770287872321",
+      "resource/sie-iidp-tenant-web/langs/vi-VN/lang.json?t=1770287872321",
+      "resource/sie-iidp-tenant-web/langs/zh-CN/css.css?t=1770287872321",
+      "resource/sie-iidp-tenant-web/langs/zh-CN/lang.json?t=1770287872321"
+    ],
+    "config": [
+      "config/sie-iidp-tenant-web/app.json?t=1770287872321"
+    ],
+    "model-views": []
+  },
+  "global": {
+    "supportLangs": {
+      "zh-CN": {
+        "name": "中文(简体)"
+      },
+      "en-US": {
+        "name": "English"
+      },
+      "vi-VN": {
+        "name": "Việt nam"
+      }
+    }
+  },
+  "comp_name": "sie-iidp-tenant-web",
+  "version": "3.0.1-RELEASE",
+  "displayName": "多租户",
+  "category": "base",
+  "categoryDesc": "基础模块",
+  "product": "base",
+  "productDesc": "工业互联网平台",
+  "tag": "master",
+  "sub": {
+    "tenant": {
+      "effectPaths": {
+        "includeRegExp": "^/base/tenants/"
+      }
+    }
+  },
+  "effectPageIds": {
+    "includeRegExp": ""
+  },
+  "extension_scope": "PLATFORM",
+  "__packageTime": "2026-2-5 18:37:52"
+}

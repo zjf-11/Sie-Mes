@@ -1,0 +1,1 @@
+import{tableToEdit}from"../utils/tableToEdit";export default{extend_table_multi_edit:{type:"custom",selector:{attr:"id",pre:["demo_example_unit_ext_menu_table_main"],value:""},beforeOperate:(e,t,i)=>(tableToEdit(e,t,i),t.view),view:{}}};

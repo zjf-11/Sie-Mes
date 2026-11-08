@@ -1,0 +1,1 @@
+import kkFileView from"./kkFileView";import kkFileViewDirective from"./kkFileViewDirective";export default{...kkFileView,...kkFileViewDirective};

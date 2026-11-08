@@ -1,0 +1,1 @@
+import book_borrow_management from"./book_borrow_management/index";import book_return_management from"./book_return_management/index";export default{...book_borrow_management,...book_return_management};

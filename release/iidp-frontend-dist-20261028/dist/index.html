@@ -1,0 +1,436 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="google" content="notranslate"/><base href="/"/><script id="iidpPreload" async></script><title></title><style>#tech_loading_res_inner {
+        border: 0.3vw solid #f3f3f355;
+        border-top: 0.3vw solid #3498db;
+        border-radius: 50%;
+        width: 5vw;
+        height: 5vw;
+        z-index: 20001;
+        animation: spin 1s linear infinite;
+        top: 50%;
+        left: 50%;
+        margin-top: -2.8vw;
+        margin-left: -2.8vw;
+        transform: translate(-50%, -50%);
+        display: block;
+        position: absolute;
+      }
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }</style><script>
+
+ window._iidpConcatPre = '/iidp'; 
+ window._iidpBuildTime = '1793170242292'; 
+
+ window.iideDev = false; 
+ try { window.iideDev = location.href.indexOf('iidpDev=true') > -1 || sessionStorage.getItem('iidpDev') === 'true';} catch(e) {}
+
+if (window.iideDev) {
+window.needLoadJsArr = [
+"/iidp/js/runtime.933338641fd5be587e7c.bundle.js",
+"/iidp/js/176.231e9fa5d6dd10cec7c1.bundle.js",
+"/iidp/js/321.1a41fb571cfafa7159ba.bundle.js",
+"/iidp/js/index.49af99136f73bf41739f.bundle.js"
+];
+
+} else {
+window.needLoadJsArr = [
+"/iidp/js/iidp.dep.js?t=1793170242381"
+];
+
+}
+window.techPluginsVersion = {
+  "buildTime": "2026-10-28 14:50:42",
+  "@tech/t-base": "3.0.6",
+  "@tech/t-build": "3.0.4",
+  "@tech/t-core": "3.0.1",
+  "@tech/t-el-ui": "3.0.3"
+};
+window.techInnerAppList = {"apps": {},"innerApp": {}} 
+
+      try {
+        let canRunSw = false
+        if (window.self === window.top) {
+          canRunSw = true
+        } else {
+          if (location.href.indexOf('swCache=true') !== -1) {
+            canRunSw = true
+          } else if (
+            window.$wujie &&
+            window.$wujie.props &&
+            window.$wujie.props.swCache
+          ) {
+            canRunSw = true
+          }
+        }
+        if (canRunSw && navigator.serviceWorker) {
+          let swUrl =
+            (window._iidpConcatPre ? window._iidpConcatPre : '') +
+            '/iidpSw.bundle.js' +
+            '?t=' +
+            (window._iidpBuildTime
+              ? window._iidpBuildTime
+              : new Date().getTime())
+          // 每次刷新清理 Service Worker 缓存
+          var clearSwCache = function () {
+            // 清理 Cache Storage 中的所有缓存
+            if ('caches' in window) {
+              caches.keys().then(function (cacheNames) {
+                cacheNames.forEach(function (cacheName) {
+                  caches.delete(cacheName)
+                  console.log('Cache deleted:', cacheName)
+                })
+              })
+            }
+          }
+
+          // 先清理缓存，再注册/更新 Service Worker
+          clearSwCache()
+
+          navigator.serviceWorker
+            .register(swUrl, { updateViaCache: 'none' })
+            .then((registration) => {
+              window.iidpSwRegistration = registration
+              // 强制检查更新
+              registration.update()
+              console.log('Service Worker registered', registration)
+            })
+            .catch((error) => {
+              console.error('Service Worker registration failed~:', error)
+            })
+          document.getElementById('iidpPreload').src =
+            (window._iidpConcatPre ? window._iidpConcatPre : '') +
+            '/iidpPreload.bundle.js' +
+            '?t=' +
+            (window._iidpBuildTime
+              ? window._iidpBuildTime
+              : new Date().getTime())
+        }
+      } catch (error) {
+        console.log('Service Worker registration failed:', error)
+      }
+
+      // 规避无界的iframe加载规则
+      // if (!window.$wujie) {
+      if (!window.Tech) {
+        window.Tech = {}
+      }
+      window.Tech.resProgressParams = {
+        preTime: 0.7, // 0.7
+        prePercent: 80,
+        bgColor: 'none', // var(--top-loading-color, rgb(255, 255, 255))
+        innerColor: 'var(--top-loading-color, rgba(150, 150, 150, 0.9))', // rgb(173, 5, 61)
+        eleHeight: '0.02rem'
+      }
+      window.Tech.startLoadResProgress = function () {
+        window.customST = new Date().getTime()
+        try {
+          var preTime = window.Tech.resProgressParams.preTime
+          var prePercent = window.Tech.resProgressParams.prePercent
+          if (!document.getElementById('tech_load_res_progress_bg')) {
+            var bgColor = window.Tech.resProgressParams.bgColor
+            var innerColor = window.Tech.resProgressParams.innerColor
+            var eleHeight = window.Tech.resProgressParams.eleHeight
+            var cssEle = document.createElement('style')
+            var innerHTMLStr = ''
+            innerHTMLStr += '@keyframes tech_load_res_progress_inner_start {\n'
+            innerHTMLStr += '  from {width: 0%;}\n'
+            innerHTMLStr += '  to {width: ' + prePercent + '%;}\n'
+            innerHTMLStr += '}\n'
+            innerHTMLStr +=
+              '@-webkit-keyframes tech_load_res_progress_inner_start {\n'
+            innerHTMLStr += '  from {width: 0%;}\n'
+            innerHTMLStr += '  to {width: ' + prePercent + '%;}\n'
+            innerHTMLStr += '}\n'
+            innerHTMLStr += '@keyframes tech_load_res_progress_inner_finish {\n'
+            innerHTMLStr += '  from {width: ' + prePercent + '%;}\n'
+            innerHTMLStr += '  to {width: 100%;}\n'
+            innerHTMLStr += '}\n'
+            innerHTMLStr +=
+              '@-webkit-keyframes tech_load_res_progress_inner_finish {\n'
+            innerHTMLStr += '  from {width: ' + prePercent + '%;}\n'
+            innerHTMLStr += '  to {width: 100%;}\n'
+            innerHTMLStr += '}\n'
+            cssEle.innerHTML = innerHTMLStr
+            var loadDivBg = document.createElement('div')
+            loadDivBg.setAttribute('id', 'tech_load_res_progress_bg')
+            loadDivBg.setAttribute(
+              'style',
+              'height:' +
+                eleHeight +
+                ';width:100%;position:fixed;z-index:2000;top:0;left:0;right:0;display:none;background:' +
+                bgColor
+            )
+            var loadDivInner = document.createElement('div')
+            loadDivInner.setAttribute('id', 'tech_load_res_progress_inner')
+            var innerAttrStr = ''
+            innerAttrStr += 'height:' + eleHeight + ';\n'
+            innerAttrStr += 'width:0%;\n'
+            innerAttrStr += 'position:fixed;\n'
+            innerAttrStr += 'z-index: 2001;\n'
+            innerAttrStr += 'top:0;\n'
+            innerAttrStr += 'left:0;\n'
+            innerAttrStr += 'display: none;\n'
+            innerAttrStr += 'background:' + innerColor + ';\n'
+            innerAttrStr +=
+              'animation: tech_load_res_progress_inner_start ' +
+              preTime +
+              's linear 0s 1 normal;\n'
+            innerAttrStr +=
+              '-webkit-animation: tech_load_res_progress_inner_start ' +
+              preTime +
+              's linear 0s 1 normal;\n'
+            loadDivInner.setAttribute('style', innerAttrStr)
+            var heads = document.getElementsByTagName('head')
+            if (heads.length) heads[0].appendChild(cssEle)
+            else document.documentElement.appendChild(cssEle)
+
+            document.body.appendChild(loadDivBg)
+            document.body.appendChild(loadDivInner)
+          }
+          var doStartProgress = () => {
+            var progressNodeBg = document.getElementById(
+              'tech_load_res_progress_bg'
+            )
+            var progressNode = document.getElementById(
+              'tech_load_res_progress_inner'
+            )
+            if (progressNode && progressNodeBg) {
+              window.Tech.stopLoadResProgress()
+              window.setTimeout(() => {
+                progressNodeBg.style.display = 'block'
+                progressNode.style.display = 'block'
+                if (window['tech_load_res_progress_timer']) {
+                  window.clearTimeout(window['tech_load_res_progress_timer'])
+                  window['tech_load_res_progress_timer'] = null
+                }
+                window['tech_load_res_progress_timer'] = window.setTimeout(
+                  () => {
+                    progressNode.style.width = prePercent + '%'
+                  },
+                  preTime * 1000
+                )
+              }, 0)
+            }
+          }
+          doStartProgress()
+          doStartProgress = null
+        } catch (e) {
+          console.error(' ==== startLoadResProgress error = ', e)
+        }
+      }
+
+      window.Tech.stopLoadResProgress = function () {
+        var preTime = window.Tech.resProgressParams.preTime
+        var progressNodeBg = document.getElementById(
+          'tech_load_res_progress_bg'
+        )
+        var progressNode = document.getElementById(
+          'tech_load_res_progress_inner'
+        )
+        if (progressNode && progressNodeBg) {
+          progressNode.style.display = 'none'
+          progressNodeBg.style.display = 'none'
+          progressNode.style.width = '0%'
+          progressNode.style.animation =
+            'tech_load_res_progress_inner_start ' +
+            preTime +
+            's linear 0s 1 normal'
+          progressNode.style['-webkit-animation'] =
+            'tech_load_res_progress_inner_start ' +
+            preTime +
+            's linear 0s 1 normal'
+        }
+      }
+
+      window.Tech.finishLoadResProgress = function () {
+        var nowT = new Date().getTime()
+        // if (!window.Tech.notPrintProgressT) {
+        //   console.log(
+        //     location.pathname,
+        //     'loading time == ' + (nowT - window.customST) + 'ms'
+        //   )
+        // }
+        var afterTime = window.Tech.resProgressParams.afterTime
+        try {
+          var progressNodeBg = document.getElementById(
+            'tech_load_res_progress_bg'
+          )
+          var progressNode = document.getElementById(
+            'tech_load_res_progress_inner'
+          )
+          if (progressNode && progressNodeBg) {
+            progressNode.style.animation =
+              'tech_load_res_progress_inner_finish ' +
+              afterTime +
+              's linear 0s 1 normal'
+            progressNode.style['-webkit-animation'] =
+              'tech_load_res_progress_inner_finish ' +
+              afterTime +
+              's linear 0s 1 normal'
+            if (window['tech_load_res_progress_finish_timer']) {
+              window.clearTimeout(window['tech_load_res_progress_finish_timer'])
+              window['tech_load_res_progress_finish_timer'] = null
+            }
+            window['tech_load_res_progress_finish_timer'] = window.setTimeout(
+              () => {
+                window.Tech.stopLoadResProgress()
+              },
+              afterTime * 1000
+            )
+          }
+          var loadingInner = document.getElementById('tech_loading_res_inner')
+          if (loadingInner) {
+            loadingInner.style.display = 'none'
+          }
+        } catch (e) {
+          console.error(' ==== finishLoadResProgress error = ', e)
+        }
+      }
+      // }
+      window.techLoadAssetJs = function () {
+        try {
+          if (window.needLoadJsArr) {
+            // 根据情况用js加载 bundle资源
+            for (var ii = 0; ii < window.needLoadJsArr.length; ii++) {
+              var tempNeedJsId = 'tempNeedJsId_' + ii
+              if (!document.getElementById(tempNeedJsId)) {
+                var needLoadJsscript = document.createElement('script')
+                needLoadJsscript.src = window.needLoadJsArr[ii]
+                needLoadJsscript.defer = 'defer'
+                needLoadJsscript.id = tempNeedJsId
+                document.body.appendChild(needLoadJsscript)
+              }
+            }
+          }
+        } catch (e) {}
+      }
+      window.techBodyLoaded = function () {
+        // 规避无界的iframe加载规则
+        if (window.$wujie) {
+          // 自身嵌套且重建菜单的情况
+          if (window.$wujie.props.menuConfig.isRebuildView) {
+            techLoadAssetJs()
+          }
+          return
+        }
+        if (location.href.indexOf('tabIframeInner') !== -1) {
+          if (window.Tech.startLoadResProgress) {
+            window.Tech.startLoadResProgress()
+          }
+          if (!window.tech) {
+            window.tech = {}
+          }
+          // 3s后必须消失
+          setTimeout(function () {
+            window.Tech.notPrintProgressT = true
+            window.Tech.finishLoadResProgress()
+          }, 3000)
+          window.tech.checkAppInterval = 50
+        } else {
+          techLoadAssetJs()
+        }
+      }
+
+      if (location.href.indexOf('tabIframeInner') !== -1) {
+        // console.log(' === in tabiframe init ')
+        // tabiframe inner情况 接收父级信息
+        window.addEventListener('message', function (event) {
+          var data = event.data
+          if (data && data.type === 'TABIFRAME') {
+            if (window.TABIFRAMEInnerInit) {
+              return
+            }
+            window.TABIFRAMEInnerInit = true
+            // console.log(' === get parent msg ')
+            if (data.tempApi && sessionStorage) {
+              sessionStorage.setItem('tempApi', data.tempApi)
+            }
+            if (localStorage) {
+              localStorage.setItem('Tabs_meta_showCount', 1)
+              if (data.outTechTheme) {
+                localStorage.setItem('TECH-THEME', data.outTechTheme)
+              }
+              // TODO 临时代码，上线稳定后需注释掉--start
+              if (data.tableStorage) {
+                localStorage.setItem(
+                  'VXE_TABLE_DATA_CACHE_LIST',
+                  data.tableStorage
+                )
+              }
+              // TODO 临时代码，上线稳定后需注释掉--end
+            }
+            if (data.outMinWidth && data.outMinWidth.indexOf('px') !== -1) {
+              var tmpMatches = data.outMinWidth.match(/\d+/)
+              if (tmpMatches) {
+                document.body.style.minWidth =
+                  parseInt(tmpMatches[0]) - 200 + 'px'
+              }
+            }
+            if (!window.tech) {
+              window.tech = {}
+            }
+            delete data.type
+            for (var kk in data) {
+              window.tech[kk] = data[kk]
+            }
+            var baseTag = document.getElementsByTagName('base')[0]
+            baseTag.href = window.tech.TABIFRAME.host + '/' // 修改base
+            setTimeout(function () {
+              techLoadAssetJs()
+            }, 50)
+            if (window.tech_init) {
+              window.tech_init()
+            }
+
+            window.parent.postMessage(
+              {
+                type: 'TABIFRAME_INIT_FINISH',
+                frameId: tech.frameId
+              },
+              window.tech.TABIFRAME.host
+            )
+          } else if (data && data.type === 'TABIFRAME_SET_LOADVIEWCACHE') {
+            if (!window.tech) {
+              window.tech = {}
+            }
+            window.tech.loadViewCache = data.loadViewCache || {}
+          } else {
+            // 其他情况
+            if (data && data.type.indexOf('TABIFRAME_') === 0) {
+              window.tech_get_parent_msg(data, event)
+            }
+          }
+        })
+      }
+      if (window.techOpenView) {
+        window.addEventListener('message', function (event) {
+          var data = event.data
+          if (data && data.type === 'TABIFRAME_THEME_WUJIE_DEGRADE') {
+            let str =
+              window.parent.document.documentElement.getAttribute('style')
+            document.documentElement.setAttribute('style', str)
+          }
+        })
+      }
+
+      try {
+        if (location.hostname === 'localhost') {
+          // 本地开发环境重写reload
+          window.reload = function () {
+            if (window?.process?.env === 'development') {
+              window.location.reload()
+            } else {
+              if (window.$wujie && window.parent !== window) {
+                top.location.reload()
+              } else {
+                window.location.reload()
+              }
+            }
+          }
+        }
+      } catch (e) {}</script><script defer="defer" ></script><script defer="defer" ></script><script defer="defer" ></script><script defer="defer" ></script></head><body onload="techBodyLoaded()"><div id="base"></div></body><div class="tech_loading_res_inner" id="tech_loading_res_inner"></div></html>

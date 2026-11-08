@@ -1,0 +1,25 @@
+{
+  "name": "main",
+  "assets": {
+    "js": [
+      "attachment.umd.min.js?t=1721447928691"
+    ],
+    "css": [
+      "style.css?t=1721447928691"
+    ],
+    "map": [],
+    "uncase": [],
+    "static-resource": [],
+    "views": [
+      "views/attachment/attachment.js?t=1721447928691",
+      "views/attachment/index.js?t=1721447928691"
+    ],
+    "resource": [],
+    "config": [
+      "config/attachment/app.json?t=1721447928691"
+    ],
+    "model-views": []
+  },
+  "global": {},
+  "__packageTime": "2024-7-20 11:58:48"
+}

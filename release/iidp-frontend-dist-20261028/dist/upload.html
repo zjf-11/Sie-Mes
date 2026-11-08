@@ -1,0 +1,196 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"/><title>必装APP上传</title><style>.upload-container {
+        margin: 20px;
+        padding: 20px;
+        border: 2px dashed #ccc;
+        border-radius: 8px;
+        text-align: center;
+        position: relative;
+        min-width: 800px;
+      }
+      .upload-groups {
+        margin-bottom: 80px;
+        display: flex;
+        justify-content: center;
+        overflow-y: auto;
+        max-height: 85vh;
+        flex-wrap: wrap;
+      }
+      .upload-section {
+        min-width: 30%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 8px;
+        margin-top: 8px;
+      }
+      .upload-label {
+        width: 100px;
+        text-align: right;
+        white-space: nowrap;
+        float: left;
+        font-size: 14px;
+        color: #606266;
+        line-height: 32px;
+        padding: 0 12px 0 0;
+      }
+      .upload-btn {
+        border: 1px solid #dcdfe6;
+        background-color: #fff;
+        border-radius: 4px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        margin-left: -1px;
+        white-space: nowrap;
+        width: 80px;
+        color: #1890ff;
+        cursor: pointer;
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .upload-btn.loading {
+        color: transparent;
+        pointer-events: none;
+      }
+      .upload-btn.loading::after {
+        content: '';
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        border: 2px solid #1890ff;
+        border-top-color: transparent;
+        border-radius: 50%;
+        animation: button-loading-spinner 1s linear infinite;
+      }
+      @keyframes button-loading-spinner {
+        from {
+          transform: rotate(0turn);
+        }
+        to {
+          transform: rotate(1turn);
+        }
+      }
+      .upload-input {
+        width: calc(100% - 200px);
+        min-width: 300px;
+        height: 32px;
+        line-height: 32px;
+        text-align: left;
+        padding-left: 8px;
+        font-size: 14px;
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid #dcdfe6;
+        border-radius: 4px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      .upload-input:hover .upload-clear {
+        display: block;
+      }
+      .submit-btn-container {
+        height: 80px;
+        width: 100%;
+        bottom: 20px;
+        /* padding-bottom: 10px; */
+        background: #fff;
+        left: 0;
+        /* padding-top: 20px; */
+        position: absolute;
+        z-index: 9;
+      }
+      .submit-btn {
+        background-color: rgb(103, 113, 119);
+        border: none;
+        height: 34px;
+        line-height: 11px;
+        font-size: 14px;
+        padding: 10px 16px;
+        border-radius: 4px;
+        color: #fff;
+      }
+      .submit-btn:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+      .submit-tips {
+        width: 100%;
+        font-size: 12px;
+        line-height: 20px;
+        color: #f56c6c;
+        padding-bottom: 6px;
+      }
+      .add-btn-container {
+        width: 50px;
+        padding-left: 10px;
+        margin: auto;
+      }
+      .add-btn,
+      .del-btn {
+        border: rgb(103, 113, 119);
+        border: none;
+        width: 34px;
+        height: 34px;
+        font-size: 24px;
+        border-radius: 50%;
+        color: #606266;
+        cursor: pointer;
+      }
+      .del-btn {
+        color: #f56c6c;
+      }
+      .del-btn:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+      .upload-group {
+        justify-content: center;
+        display: flex;
+        padding-bottom: 10px;
+      }
+      .upload-clear {
+        display: none;
+        height: 32px;
+        width: 20px;
+        line-height: 32px;
+        cursor: pointer;
+      }
+      .upload-text {
+        line-height: 32px;
+      }
+      .upload-text {
+        line-height: 32px;
+      }
+      .page-loading {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.9);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        flex-direction: column;
+      }
+      .page-loading.active {
+        display: flex;
+      }
+      .page-loading-spinner {
+        width: 50px;
+        height: 50px;
+        border: 3px solid #f3f3f3;
+        border-top: 3px solid #1890ff;
+        border-radius: 50%;
+        animation: page-loading-spinner 1s linear infinite;
+        margin-bottom: 20px;
+      }
+      @keyframes page-loading-spinner {
+        from {
+          transform: rotate(0turn);
+        }
+        to {
+          transform: rotate(1turn);
+        }
+      }</style><script defer="defer" src="/iidp/js/runtime.933338641fd5be587e7c.bundle.js"></script><script defer="defer" src="/iidp/js/upload.58dd57d70548c4093b28.bundle.js"></script></head><body><div class="page-loading"><div class="page-loading-spinner"></div></div><div class="upload-container"><div id="uploadGroups" class="upload-groups"></div><div class="submit-btn-container"><div class="submit-tips" id="submit-tips"></div><button id="submit-btn" class="submit-btn">提交</button></div></div></body></html>

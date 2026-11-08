@@ -1,0 +1,1 @@
+export default{demo_example_checkbox_extend_view:{type:"custom",selector:{attr:"id",value:"demo_example_unit_ext_menu_table_main_table_column_isEnable"},beforeOperate:(e,m,t)=>{t.element.type="checkbox",t.element.name="is_admin",t.element.model={},t.element.formatItem=(e,m)=>(m.model.is_admin=e.is_admin,m)}}};

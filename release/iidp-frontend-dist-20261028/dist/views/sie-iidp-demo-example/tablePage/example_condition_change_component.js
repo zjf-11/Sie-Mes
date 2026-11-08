@@ -1,0 +1,1 @@
+export default{page_view_by_role_extend:{type:"after",selector:{attr:"id",value:"demo_example_unit_ext_menu_table_toolbar_delete"},view:{type:"button",value:"自定义按钮",options:{type:"text",size:"mini",icon:"iconfont icon-Service"},view:{click:{type:"dialog",items:[{id:"testId",__block:"b-custom-container",preId:"my-pre-test-"}]}}}}};

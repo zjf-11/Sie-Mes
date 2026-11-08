@@ -1,0 +1,51 @@
+{
+  "global": {
+    "supportLangs": {
+      "zh-CN": {
+        "name": "中文(简体)"
+      },
+      "en-US": {
+        "name": "English"
+      },
+      "vi-VN": {
+        "name": "Việt nam"
+      }
+    }
+  },
+  "effectPaths": {
+    "includeRegExp": "^/(base/tenants)|(base/developer)|(base/rbac_user_permission_menu)|(base/master-data)"
+  },
+  "name": "sie-iidp-iam",
+  "comp_name": "sie-iidp-iam-web",
+  "version": "3.0.1-UAT.3",
+  "displayName": "权限",
+  "category": "base",
+  "categoryDesc": "基础模块",
+  "product": "base",
+  "productDesc": "工业互联网平台",
+  "tag": "master",
+  "extension_scope": "PLATFORM",
+  "sub": {
+    "action": {
+      "effectPaths": {
+        "includeRegExp": "^/(base/rbac_user_permission_menu/tenant_action_scope)|(base/rbac_user_permission_menu/tenant_action_dimension)"
+      }
+    },
+    "base-interface": {
+      "notDepParent": true
+    },
+    "permission": {
+      "effectPaths": {
+        "includeRegExp": "^/base/rbac_user_permission_menu/tenant_custom_per"
+      }
+    },
+    "scope": {
+      "effectPageIds": {
+        "exclude": [
+          "page_meta_login"
+        ]
+      },
+      "notDepParent": true
+    }
+  }
+}
