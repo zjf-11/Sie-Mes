@@ -3,6 +3,7 @@ package com.sie.app.mes.model;
 import com.sie.app.mes.util.CodeRuleGenerator;
 import com.sie.snest.engine.data.RecordSet;
 import com.sie.snest.engine.model.Bool;
+import com.sie.snest.engine.rule.Filter;
 import com.sie.snest.sdk.BaseModel;
 import com.sie.snest.sdk.annotation.meta.MethodService;
 import com.sie.snest.sdk.annotation.meta.Model;
@@ -11,6 +12,7 @@ import com.sie.snest.sdk.annotation.orm.OneToMany;
 import com.sie.snest.sdk.annotation.orm.Option;
 import com.sie.snest.sdk.annotation.orm.Selection;
 import com.sie.snest.sdk.annotation.validate.Validate;
+import com.sie.snest.sdk.db.DbUtils;
 
 import java.util.List;
 
@@ -102,5 +104,19 @@ public class Product extends BaseModel<Product> {
             item.setCreate_user(rs.getMeta().getUserId());
         }
         return (RecordSet) rs.callSuper(Product.class, "create", valuesList);
+    }
+
+    /**
+     * 删除产品时，先删除其 BOM 明细，避免留下孤儿数据。
+     * 注意：不能直接调用 rs.delete()，那会再次派发到本方法造成无限递归，
+     * 必须用 callSuper 调用平台的基础删除实现。
+     */
+    @MethodService(name = "delete", auth = "delete", description = "删除")
+    public boolean delete(RecordSet rs) {
+        String[] ids = rs.getIds();
+        if (ids != null && ids.length > 0) {
+            DbUtils.delete(Filter.in("product", java.util.Arrays.asList(ids)), ProductBom.class);
+        }
+        return (boolean) rs.callSuper(Product.class, "delete");
     }
 }
