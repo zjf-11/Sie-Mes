@@ -16,6 +16,7 @@
   "icon": null,
   "license": "LGPL 3.0",
   "view": [
+    "mes-code-rule-view.json",
     "mes-material-view.json",
     "mes-order-view.json",
     "mes-process-bom-view.json",

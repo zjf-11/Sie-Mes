@@ -1,0 +1,132 @@
+{
+  "views": {
+    "code_rule_grid": {
+      "body": {
+        "buttons": [
+          {
+            "action": "preview",
+            "auth": "read",
+            "name": "详情"
+          },
+          {
+            "action": "edit",
+            "auth": "update",
+            "name": "编辑"
+          }
+        ],
+        "columns": [
+          {
+            "displayName": "规则名称",
+            "name": "name"
+          },
+          {
+            "displayName": "规则编码",
+            "name": "code",
+            "sortable": true,
+            "width": "120px"
+          },
+          {
+            "displayName": "前缀",
+            "name": "prefix"
+          },
+          {
+            "displayName": "流水号位数",
+            "name": "seqLength"
+          },
+          {
+            "displayName": "日期格式",
+            "name": "dateFormat"
+          },
+          {
+            "displayName": "当前流水号",
+            "name": "currentSeq"
+          },
+          {
+            "displayName": "备注",
+            "name": "remark"
+          }
+        ],
+        "tbar": [
+          {
+            "action": "create",
+            "auth": "create",
+            "name": "新增"
+          },
+          {
+            "action": "delete",
+            "auth": "delete",
+            "name": "删除"
+          }
+        ],
+        "type": "grid"
+      },
+      "mode": "primary",
+      "model": "code_rule",
+      "name": "编码规则-表格",
+      "type": "grid"
+    },
+    "code_rule_form": {
+      "body": {
+        "columns": [
+          {
+            "displayName": "规则名称",
+            "name": "name"
+          },
+          {
+            "displayName": "规则编码",
+            "name": "code"
+          },
+          {
+            "displayName": "前缀",
+            "name": "prefix"
+          },
+          {
+            "displayName": "流水号位数",
+            "name": "seqLength"
+          },
+          {
+            "displayName": "日期格式",
+            "name": "dateFormat"
+          },
+          {
+            "displayName": "备注",
+            "name": "remark"
+          }
+        ],
+        "tabs": [],
+        "type": "form"
+      },
+      "mode": "primary",
+      "model": "code_rule",
+      "name": "编码规则-表单",
+      "type": "form"
+    },
+    "code_rule_search": {
+      "body": {
+        "columns": [
+          {
+            "displayName": "规则名称",
+            "name": "name"
+          },
+          {
+            "displayName": "规则编码",
+            "name": "code"
+          },
+          {
+            "displayName": "前缀",
+            "name": "prefix"
+          },
+          {
+            "displayName": "日期格式",
+            "name": "dateFormat"
+          }
+        ],
+        "type": "search"
+      },
+      "mode": "primary",
+      "model": "code_rule",
+      "name": "编码规则-搜索",
+      "type": "search"
+    }
+  }
+}

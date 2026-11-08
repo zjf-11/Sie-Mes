@@ -1,7 +1,8 @@
 package com.sie.app.mes.model;
 
-import com.sie.app.mes.util.CodeGenerator;
+import com.sie.app.mes.util.CodeRuleGenerator;
 import com.sie.snest.engine.data.RecordSet;
+import com.sie.snest.engine.exception.ValidationException;
 import com.sie.snest.engine.model.Bool;
 import com.sie.snest.engine.rule.Filter;
 import com.sie.snest.sdk.BaseModel;
@@ -11,13 +12,12 @@ import com.sie.snest.sdk.annotation.meta.Model;
 import com.sie.snest.sdk.annotation.meta.Property;
 import com.sie.snest.sdk.annotation.orm.JoinColumn;
 import com.sie.snest.sdk.annotation.orm.ManyToOne;
+import com.sie.snest.sdk.annotation.validate.Validate;
+import com.sie.snest.sdk.db.DbUtils;
 
 import java.util.List;
-import java.util.Map;
 
-/**
- * @author Kris
- */
+
 @Model(name = "material",
         tableName = "ems_material",
         displayName = "物料",
@@ -29,7 +29,8 @@ public class Material extends BaseModel<Material> {
     @Property(displayName = "名称", displayForModel = true)
     private String name;
 
-    @Property(displayName = "编码")
+    @Validate.Unique(properties = {"code"}, message = "物料编码已存在！")
+    @Property(displayName = "编码", unique = true)
     private String code;
 
     @Dict(typeCode = "material_type")
@@ -127,15 +128,28 @@ public class Material extends BaseModel<Material> {
     }
 
     @MethodService(name = "create",auth = "create",description = "创建")
-    public RecordSet create(RecordSet rs, List<Material> valueList){
-        valueList.forEach((item) ->{
-            item.setCode(CodeGenerator.generateCode("M"));
+    public RecordSet create(RecordSet rs, List<Material> valuesList){
+        // 参数名必须是 valuesList，平台按参数名从 RPC args 中取值
+        if (valuesList == null || valuesList.isEmpty()) {
+            return (RecordSet) rs.callSuper(Material.class, "create");
+        }
+        for (Material item : valuesList) {
+            String code = item.getCode();
+            // 编码未手工填写时，调用编码服务按 MATERIAL 规则生成
+            if (code == null || code.trim().isEmpty()) {
+                code = CodeRuleGenerator.nextCode("MATERIAL");
+            }
+            code = code.trim();
+            if (DbUtils.count(Filter.equal("code", code), Material.class) > 0) {
+                throw new ValidationException("物料编码已存在：" + code);
+            }
+            item.setCode(code);
             /**
              * 获取当前上下文用户id
              */
             item.setCreate_user(rs.getMeta().getUserId());
-        });
-        return (RecordSet) rs.callSuper(Material.class,"create",valueList);
+        }
+        return (RecordSet) rs.callSuper(Material.class,"create",valuesList);
     }
 
     @MethodService(name="search",auth = "search",description = "分页查询方法")

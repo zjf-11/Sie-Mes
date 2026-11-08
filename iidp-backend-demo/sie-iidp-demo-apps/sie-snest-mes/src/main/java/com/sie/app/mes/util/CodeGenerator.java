@@ -1,54 +1,27 @@
 package com.sie.app.mes.util;
 
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-
 /**
- * 编码生成工具类
+ * 旧的编码生成工具，已废弃。
+ *
+ * <p>请使用 {@link CodeRuleGenerator}，按【编码规则】中配置的前缀、日期格式、
+ * 流水号位数生成编码。</p>
+ *
+ * @author Kris
+ * @deprecated use {@link CodeRuleGenerator#nextCode(String)}
  */
-public class CodeGenerator {
+@Deprecated
+public final class CodeGenerator {
 
-    /**
-     * 流水号
-     */
-    private static int sequence = 0;
-
-    /**
-     * 时间格式化
-     */
-    private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMddHHmmssSSS");
-
-    /**
-     * 生成唯一编码方法
-     * @param prefixStr
-     * @return
-     */
-    public synchronized static String generateCode(String prefixStr){
-
-        /**
-         * 获取当前时间
-         */
-        LocalDateTime now = LocalDateTime.now();
-
-        /**
-         * 流水号递增
-         */
-        int cuurrentSeq = ++sequence;
-
-        /**
-         * 当前时间格式化
-         */
-        String formattedTime = now.format(formatter);
-        return String.format("%s%s%05d",prefixStr,formattedTime,cuurrentSeq);
+    private CodeGenerator() {
     }
 
-    public static void main(String[] args) {
-        System.out.println("第一个编码:"+generateCode("M"));
-
-        System.out.println("第二个编码:"+generateCode("M"));
+    /**
+     * @param ruleCode 编码规则的规则编码，如 PRODUCT
+     * @return 生成的编码
+     * @deprecated use {@link CodeRuleGenerator#nextCode(String)}
+     */
+    @Deprecated
+    public static String generateCode(String ruleCode) {
+        return CodeRuleGenerator.nextCode(ruleCode);
     }
-
-
-
-
 }

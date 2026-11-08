@@ -71,6 +71,17 @@
       "parent_ids": {
         "@ref": "mes_root_menu"
       }
+    },
+    "code_rule_menu": {
+      "name": "code_rule_menu",
+      "display_name": "编码规则",
+      "model": "code_rule",
+      "view": "code_rule_grid,code_rule_search,code_rule_form",
+      "sequence": 7,
+      "active": true,
+      "parent_ids": {
+        "@ref": "mes_root_menu"
+      }
     }
   }
 }
