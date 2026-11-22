@@ -1,0 +1,154 @@
+{
+  "views": {
+    "material_lot_genealogy_grid": {
+      "body": {
+        "buttons": [
+          {
+            "action": "preview",
+            "auth": "read",
+            "name": "详情"
+          },
+          {
+            "action": "edit",
+            "auth": "update",
+            "name": "编辑"
+          }
+        ],
+        "columns": [
+          {
+            "displayName": "子批次ID",
+            "name": "childLotId"
+          },
+          {
+            "displayName": "子批次类型",
+            "name": "childLotType"
+          },
+          {
+            "displayName": "父批次ID",
+            "name": "parentLotId"
+          },
+          {
+            "displayName": "父批次类型",
+            "name": "parentLotType"
+          },
+          {
+            "displayName": "物料编码",
+            "name": "materialCode"
+          },
+          {
+            "displayName": "供应商",
+            "name": "supplier"
+          },
+          {
+            "displayName": "投入数量",
+            "name": "qty"
+          },
+          {
+            "displayName": "单位",
+            "name": "unit"
+          },
+          {
+            "displayName": "关系类型",
+            "name": "relationType"
+          },
+          {
+            "displayName": "创建时间",
+            "name": "createdAt"
+          }
+        ],
+        "tbar": [
+          {
+            "action": "create",
+            "auth": "create",
+            "name": "新增"
+          },
+          {
+            "action": "delete",
+            "auth": "delete",
+            "name": "删除"
+          }
+        ],
+        "type": "grid"
+      },
+      "mode": "primary",
+      "model": "material_lot_genealogy",
+      "name": "物料批次谱系-表格",
+      "type": "grid"
+    },
+    "material_lot_genealogy_form": {
+      "body": {
+        "columns": [
+          {
+            "displayName": "子批次ID",
+            "name": "childLotId"
+          },
+          {
+            "displayName": "子批次类型",
+            "name": "childLotType"
+          },
+          {
+            "displayName": "父批次ID",
+            "name": "parentLotId"
+          },
+          {
+            "displayName": "父批次类型",
+            "name": "parentLotType"
+          },
+          {
+            "displayName": "物料编码",
+            "name": "materialCode"
+          },
+          {
+            "displayName": "供应商",
+            "name": "supplier"
+          },
+          {
+            "displayName": "投入数量",
+            "name": "qty"
+          },
+          {
+            "displayName": "单位",
+            "name": "unit"
+          },
+          {
+            "displayName": "关系类型",
+            "name": "relationType"
+          },
+          {
+            "displayName": "创建时间",
+            "name": "createdAt"
+          }
+        ],
+        "tabs": [],
+        "type": "form"
+      },
+      "mode": "primary",
+      "model": "material_lot_genealogy",
+      "name": "物料批次谱系-表单",
+      "type": "form"
+    },
+    "material_lot_genealogy_search": {
+      "body": {
+        "columns": [
+          {
+            "displayName": "子批次ID",
+            "name": "childLotId"
+          },
+          {
+            "displayName": "父批次ID",
+            "name": "parentLotId"
+          },
+          {
+            "displayName": "物料编码",
+            "name": "materialCode"
+          }
+        ],
+        "type": "search"
+      },
+      "mode": "primary",
+      "model": "material_lot_genealogy",
+      "name": "物料批次谱系-搜索",
+      "type": "search"
+    }
+  }
+}

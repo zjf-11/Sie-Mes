@@ -1,0 +1,124 @@
+{
+  "views": {
+    "equipment_mold_grid": {
+      "body": {
+        "buttons": [
+          {
+            "action": "preview",
+            "auth": "read",
+            "name": "详情"
+          },
+          {
+            "action": "edit",
+            "auth": "update",
+            "name": "编辑"
+          }
+        ],
+        "columns": [
+          {
+            "displayName": "编号",
+            "name": "assetCode",
+            "sortable": true
+          },
+          {
+            "displayName": "类型",
+            "name": "assetType"
+          },
+          {
+            "displayName": "名称",
+            "name": "assetName"
+          },
+          {
+            "displayName": "状态",
+            "name": "status"
+          },
+          {
+            "displayName": "累计模次",
+            "name": "moldShotCount"
+          },
+          {
+            "displayName": "最近保养时间",
+            "name": "lastMaintenanceAt"
+          }
+        ],
+        "tbar": [
+          {
+            "action": "create",
+            "auth": "create",
+            "name": "新增"
+          },
+          {
+            "action": "delete",
+            "auth": "delete",
+            "name": "删除"
+          }
+        ],
+        "type": "grid"
+      },
+      "mode": "primary",
+      "model": "equipment_mold",
+      "name": "设备模具-表格",
+      "type": "grid"
+    },
+    "equipment_mold_form": {
+      "body": {
+        "columns": [
+          {
+            "displayName": "编号",
+            "name": "assetCode",
+            "sortable": true
+          },
+          {
+            "displayName": "类型",
+            "name": "assetType"
+          },
+          {
+            "displayName": "名称",
+            "name": "assetName"
+          },
+          {
+            "displayName": "状态",
+            "name": "status"
+          },
+          {
+            "displayName": "累计模次",
+            "name": "moldShotCount"
+          },
+          {
+            "displayName": "最近保养时间",
+            "name": "lastMaintenanceAt"
+          }
+        ],
+        "tabs": [],
+        "type": "form"
+      },
+      "mode": "primary",
+      "model": "equipment_mold",
+      "name": "设备模具-表单",
+      "type": "form"
+    },
+    "equipment_mold_search": {
+      "body": {
+        "columns": [
+          {
+            "displayName": "编号",
+            "name": "assetCode"
+          },
+          {
+            "displayName": "名称",
+            "name": "assetName"
+          },
+          {
+            "displayName": "类型",
+            "name": "assetType"
+          }
+        ],
+        "type": "search"
+      },
+      "mode": "primary",
+      "model": "equipment_mold",
+      "name": "设备模具-搜索",
+      "type": "search"
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "views": {
+    "cup_sequence_grid": {
+      "body": {
+        "buttons": [
+          {
+            "action": "preview",
+            "auth": "read",
+            "name": "详情"
+          },
+          {
+            "action": "edit",
+            "auth": "update",
+            "name": "编辑"
+          }
+        ],
+        "columns": [
+          {
+            "displayName": "编码类型",
+            "name": "codeType"
+          },
+          {
+            "displayName": "当前值",
+            "name": "currentValue"
+          },
+          {
+            "displayName": "日期段",
+            "name": "seqDate"
+          }
+        ],
+        "tbar": [
+          {
+            "action": "create",
+            "auth": "create",
+            "name": "新增"
+          },
+          {
+            "action": "delete",
+            "auth": "delete",
+            "name": "删除"
+          }
+        ],
+        "type": "grid"
+      },
+      "mode": "primary",
+      "model": "cup_sequence",
+      "name": "编码序列-表格",
+      "type": "grid"
+    },
+    "cup_sequence_form": {
+      "body": {
+        "columns": [
+          {
+            "displayName": "编码类型",
+            "name": "codeType"
+          },
+          {
+            "displayName": "当前值",
+            "name": "currentValue"
+          },
+          {
+            "displayName": "日期段",
+            "name": "seqDate"
+          }
+        ],
+        "tabs": [],
+        "type": "form"
+      },
+      "mode": "primary",
+      "model": "cup_sequence",
+      "name": "编码序列-表单",
+      "type": "form"
+    },
+    "cup_sequence_search": {
+      "body": {
+        "columns": [
+          {
+            "displayName": "编码类型",
+            "name": "codeType"
+          },
+          {
+            "displayName": "当前值",
+            "name": "currentValue"
+          },
+          {
+            "displayName": "日期段",
+            "name": "seqDate"
+          }
+        ],
+        "type": "search"
+      },
+      "mode": "primary",
+      "model": "cup_sequence",
+      "name": "编码序列-搜索",
+      "type": "search"
+    }
+  }
+}

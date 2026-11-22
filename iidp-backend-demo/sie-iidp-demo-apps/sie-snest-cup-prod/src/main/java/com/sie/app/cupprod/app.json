@@ -1,0 +1,26 @@
+{
+  "name": "cupprod",
+  "displayName": "保温杯-生产执行",
+  "author": "zjf",
+  "company": "sie",
+  "category": "MES",
+  "product": "保温杯生产管理系统",
+  "description": "保温杯生产管理系统：生产工单、生产批次与工序履历",
+  "summary": "保温杯-生产执行",
+  "type": "SDK",
+  "tag": "master",
+  "version": "0.0.1",
+  "resolved": "com.sie.app.cupprod",
+  "dependencies": [
+    "cupbase"
+  ],
+  "application": true,
+  "icon": null,
+  "license": "LGPL 3.0",
+  "view": [
+    "production-order-view.json",
+    "production-batch-view.json",
+    "process-history-view.json"
+  ],
+  "data": []
+}

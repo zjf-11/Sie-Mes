@@ -1,0 +1,128 @@
+{
+  "views": {
+    "product_sku_grid": {
+      "body": {
+        "buttons": [
+          {
+            "action": "preview",
+            "auth": "read",
+            "name": "详情"
+          },
+          {
+            "action": "edit",
+            "auth": "update",
+            "name": "编辑"
+          }
+        ],
+        "columns": [
+          {
+            "displayName": "SKU编码",
+            "name": "skuCode",
+            "sortable": true,
+            "width": "150px"
+          },
+          {
+            "displayName": "产品名称",
+            "name": "productName"
+          },
+          {
+            "displayName": "容量(ml)",
+            "name": "capacityMl"
+          },
+          {
+            "displayName": "杯口口径",
+            "name": "caliber"
+          },
+          {
+            "displayName": "执行标准",
+            "name": "executeStandard"
+          },
+          {
+            "displayName": "状态",
+            "name": "status"
+          }
+        ],
+        "tbar": [
+          {
+            "action": "create",
+            "auth": "create",
+            "name": "新增"
+          },
+          {
+            "action": "delete",
+            "auth": "delete",
+            "name": "删除"
+          }
+        ],
+        "type": "grid"
+      },
+      "mode": "primary",
+      "model": "product_sku",
+      "name": "产品SKU-表格",
+      "type": "grid"
+    },
+    "product_sku_form": {
+      "body": {
+        "columns": [
+          {
+            "displayName": "SKU编码",
+            "name": "skuCode"
+          },
+          {
+            "displayName": "产品名称",
+            "name": "productName"
+          },
+          {
+            "displayName": "容量(ml)",
+            "name": "capacityMl"
+          },
+          {
+            "displayName": "杯口口径",
+            "name": "caliber"
+          },
+          {
+            "displayName": "配件清单",
+            "name": "accessoryList"
+          },
+          {
+            "displayName": "执行标准",
+            "name": "executeStandard"
+          },
+          {
+            "displayName": "状态",
+            "name": "status"
+          }
+        ],
+        "tabs": [],
+        "type": "form"
+      },
+      "mode": "primary",
+      "model": "product_sku",
+      "name": "产品SKU-表单",
+      "type": "form"
+    },
+    "product_sku_search": {
+      "body": {
+        "columns": [
+          {
+            "displayName": "SKU编码",
+            "name": "skuCode"
+          },
+          {
+            "displayName": "产品名称",
+            "name": "productName"
+          },
+          {
+            "displayName": "状态",
+            "name": "status"
+          }
+        ],
+        "type": "search"
+      },
+      "mode": "primary",
+      "model": "product_sku",
+      "name": "产品SKU-搜索",
+      "type": "search"
+    }
+  }
+}

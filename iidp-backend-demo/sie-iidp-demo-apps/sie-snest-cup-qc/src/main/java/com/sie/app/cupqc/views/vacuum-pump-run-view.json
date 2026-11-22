@@ -1,0 +1,214 @@
+{
+  "views": {
+    "vacuum_pump_run_grid": {
+      "body": {
+        "buttons": [
+          {
+            "action": "preview",
+            "auth": "read",
+            "name": "详情"
+          },
+          {
+            "action": "edit",
+            "auth": "update",
+            "name": "编辑"
+          }
+        ],
+        "columns": [
+          {
+            "displayName": "炉次号",
+            "name": "runNo",
+            "sortable": true
+          },
+          {
+            "displayName": "真空炉设备",
+            "name": "equipment"
+          },
+          {
+            "displayName": "抽真空温度",
+            "name": "vacuumTemp"
+          },
+          {
+            "displayName": "抽真空时长",
+            "name": "vacuumDuration"
+          },
+          {
+            "displayName": "开始时间",
+            "name": "startTime"
+          },
+          {
+            "displayName": "结束时间",
+            "name": "endTime"
+          },
+          {
+            "displayName": "操作人",
+            "name": "operator"
+          },
+          {
+            "displayName": "炉次状态",
+            "name": "runStatus"
+          }
+        ],
+        "tbar": [
+          {
+            "action": "create",
+            "auth": "create",
+            "name": "新增"
+          },
+          {
+            "action": "delete",
+            "auth": "delete",
+            "name": "删除"
+          }
+        ],
+        "type": "grid"
+      },
+      "mode": "primary",
+      "model": "vacuum_pump_run",
+      "name": "抽真空炉次-表格",
+      "type": "grid"
+    },
+    "vacuum_pump_run_form": {
+      "body": {
+        "columns": [
+          {
+            "displayName": "炉次号",
+            "name": "runNo",
+            "sortable": true
+          },
+          {
+            "displayName": "真空炉设备",
+            "name": "equipment"
+          },
+          {
+            "displayName": "抽真空温度",
+            "name": "vacuumTemp"
+          },
+          {
+            "displayName": "抽真空时长",
+            "name": "vacuumDuration"
+          },
+          {
+            "displayName": "开始时间",
+            "name": "startTime"
+          },
+          {
+            "displayName": "结束时间",
+            "name": "endTime"
+          },
+          {
+            "displayName": "操作人",
+            "name": "operator"
+          },
+          {
+            "displayName": "炉次状态",
+            "name": "runStatus"
+          }
+        ],
+        "tabs": [
+          {
+            "header": "炉次批次明细",
+            "body": {
+              "buttons": [
+                {
+                  "action": "updateEr",
+                  "auth": "update",
+                  "name": "编辑"
+                }
+              ],
+              "columns": [
+                {
+                  "displayName": "生产批次",
+                  "name": "batch"
+                },
+                {
+                  "displayName": "真空度读数",
+                  "name": "vacuumReading"
+                },
+                {
+                  "displayName": "检测结果",
+                  "name": "testResult"
+                },
+                {
+                  "displayName": "锁定",
+                  "name": "lockFlag"
+                },
+                {
+                  "displayName": "复测序号",
+                  "name": "retestSeq"
+                }
+              ],
+              "edit": {
+                "columns": [
+                  {
+                    "displayName": "生产批次",
+                    "name": "batch"
+                  },
+                  {
+                    "displayName": "真空度读数",
+                    "name": "vacuumReading"
+                  },
+                  {
+                    "displayName": "单位",
+                    "name": "vacuumUnit"
+                  },
+                  {
+                    "displayName": "检测结果",
+                    "name": "testResult"
+                  },
+                  {
+                    "displayName": "检测人",
+                    "name": "testedBy"
+                  }
+                ],
+                "type": "form"
+              },
+              "field": "runBatchList",
+              "type": "grid,form"
+            },
+            "tbar": [
+              {
+                "action": "createEr",
+                "auth": "create",
+                "name": "创建"
+              },
+              {
+                "action": "deleteEr",
+                "auth": "delete",
+                "name": "删除"
+              }
+            ]
+          }
+        ],
+        "type": "form"
+      },
+      "mode": "primary",
+      "model": "vacuum_pump_run",
+      "name": "抽真空炉次-表单",
+      "type": "form"
+    },
+    "vacuum_pump_run_search": {
+      "body": {
+        "columns": [
+          {
+            "displayName": "炉次号",
+            "name": "runNo"
+          },
+          {
+            "displayName": "真空炉设备",
+            "name": "equipment"
+          },
+          {
+            "displayName": "炉次状态",
+            "name": "runStatus"
+          }
+        ],
+        "type": "search"
+      },
+      "mode": "primary",
+      "model": "vacuum_pump_run",
+      "name": "抽真空炉次-搜索",
+      "type": "search"
+    }
+  }
+}

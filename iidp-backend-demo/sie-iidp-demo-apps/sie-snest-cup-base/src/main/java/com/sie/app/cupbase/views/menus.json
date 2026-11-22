@@ -1,0 +1,32 @@
+{
+  "menus": {
+    "cupbase_root_menu": {
+      "name": "cupbase_root_menu",
+      "display_name": "保温杯-基础数据",
+      "active": true,
+      "sequence": 10
+    },
+    "product_sku_menu": {
+      "name": "product_sku_menu",
+      "display_name": "产品SKU",
+      "model": "product_sku",
+      "view": "product_sku_grid,product_sku_search,product_sku_form",
+      "sequence": 1,
+      "active": true,
+      "parent_ids": {
+        "@ref": "cupbase_root_menu"
+      }
+    },
+    "equipment_mold_menu": {
+      "name": "equipment_mold_menu",
+      "display_name": "设备模具",
+      "model": "equipment_mold",
+      "view": "equipment_mold_grid,equipment_mold_search,equipment_mold_form",
+      "sequence": 2,
+      "active": true,
+      "parent_ids": {
+        "@ref": "cupbase_root_menu"
+      }
+    }
+  }
+}

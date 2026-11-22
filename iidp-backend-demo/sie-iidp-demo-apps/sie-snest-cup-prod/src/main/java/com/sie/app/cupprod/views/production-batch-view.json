@@ -1,0 +1,218 @@
+{
+  "views": {
+    "production_batch_grid": {
+      "body": {
+        "buttons": [
+          {
+            "action": "preview",
+            "auth": "read",
+            "name": "详情"
+          },
+          {
+            "action": "edit",
+            "auth": "update",
+            "name": "编辑"
+          }
+        ],
+        "columns": [
+          {
+            "displayName": "批次码",
+            "name": "batchCode",
+            "sortable": true
+          },
+          {
+            "displayName": "生产工单",
+            "name": "prodOrder"
+          },
+          {
+            "displayName": "产品SKU",
+            "name": "sku"
+          },
+          {
+            "displayName": "当前工序",
+            "name": "currentProcess"
+          },
+          {
+            "displayName": "批次状态",
+            "name": "status"
+          },
+          {
+            "displayName": "是否锁定",
+            "name": "lockFlag"
+          },
+          {
+            "displayName": "批次数量",
+            "name": "batchQty"
+          }
+        ],
+        "tbar": [
+          {
+            "action": "create",
+            "auth": "create",
+            "name": "新增"
+          },
+          {
+            "action": "delete",
+            "auth": "delete",
+            "name": "删除"
+          }
+        ],
+        "type": "grid"
+      },
+      "mode": "primary",
+      "model": "production_batch",
+      "name": "生产批次-表格",
+      "type": "grid"
+    },
+    "production_batch_form": {
+      "body": {
+        "columns": [
+          {
+            "displayName": "批次码",
+            "name": "batchCode",
+            "sortable": true
+          },
+          {
+            "displayName": "生产工单",
+            "name": "prodOrder"
+          },
+          {
+            "displayName": "产品SKU",
+            "name": "sku"
+          },
+          {
+            "displayName": "当前工序",
+            "name": "currentProcess"
+          },
+          {
+            "displayName": "批次状态",
+            "name": "status"
+          },
+          {
+            "displayName": "是否锁定",
+            "name": "lockFlag"
+          },
+          {
+            "displayName": "批次数量",
+            "name": "batchQty"
+          }
+        ],
+        "tabs": [
+          {
+            "header": "工序履历",
+            "body": {
+              "buttons": [
+                {
+                  "action": "updateEr",
+                  "auth": "update",
+                  "name": "编辑"
+                }
+              ],
+              "columns": [
+                {
+                  "displayName": "序号",
+                  "name": "seqNo"
+                },
+                {
+                  "displayName": "工序名称",
+                  "name": "processName"
+                },
+                {
+                  "displayName": "设备",
+                  "name": "equipment"
+                },
+                {
+                  "displayName": "操作人",
+                  "name": "operator"
+                },
+                {
+                  "displayName": "合格数",
+                  "name": "qualifiedQty"
+                },
+                {
+                  "displayName": "不合格数",
+                  "name": "unqualifiedQty"
+                }
+              ],
+              "edit": {
+                "columns": [
+                  {
+                    "displayName": "序号",
+                    "name": "seqNo"
+                  },
+                  {
+                    "displayName": "工序名称",
+                    "name": "processName"
+                  },
+                  {
+                    "displayName": "设备",
+                    "name": "equipment"
+                  },
+                  {
+                    "displayName": "操作人",
+                    "name": "operator"
+                  },
+                  {
+                    "displayName": "合格数",
+                    "name": "qualifiedQty"
+                  },
+                  {
+                    "displayName": "不合格数",
+                    "name": "unqualifiedQty"
+                  }
+                ],
+                "type": "form"
+              },
+              "field": "processHistoryList",
+              "type": "grid,form"
+            },
+            "tbar": [
+              {
+                "action": "createEr",
+                "auth": "create",
+                "name": "创建"
+              },
+              {
+                "action": "deleteEr",
+                "auth": "delete",
+                "name": "删除"
+              }
+            ]
+          }
+        ],
+        "type": "form"
+      },
+      "mode": "primary",
+      "model": "production_batch",
+      "name": "生产批次-表单",
+      "type": "form"
+    },
+    "production_batch_search": {
+      "body": {
+        "columns": [
+          {
+            "displayName": "批次码",
+            "name": "batchCode"
+          },
+          {
+            "displayName": "当前工序",
+            "name": "currentProcess"
+          },
+          {
+            "displayName": "批次状态",
+            "name": "status"
+          },
+          {
+            "displayName": "是否锁定",
+            "name": "lockFlag"
+          }
+        ],
+        "type": "search"
+      },
+      "mode": "primary",
+      "model": "production_batch",
+      "name": "生产批次-搜索",
+      "type": "search"
+    }
+  }
+}

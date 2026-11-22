@@ -1,0 +1,65 @@
+{
+  "menus": {
+    "cupqc_root_menu": {
+      "name": "cupqc_root_menu",
+      "display_name": "保温杯-质量管控",
+      "active": true,
+      "sequence": 12
+    },
+    "vacuum_weld_record_menu": {
+      "name": "vacuum_weld_record_menu",
+      "display_name": "真空焊参数",
+      "model": "vacuum_weld_record",
+      "view": "vacuum_weld_record_grid,vacuum_weld_record_search,vacuum_weld_record_form",
+      "sequence": 1,
+      "active": true,
+      "parent_ids": {
+        "@ref": "cupqc_root_menu"
+      }
+    },
+    "vacuum_pump_run_menu": {
+      "name": "vacuum_pump_run_menu",
+      "display_name": "抽真空炉次",
+      "model": "vacuum_pump_run",
+      "view": "vacuum_pump_run_grid,vacuum_pump_run_search,vacuum_pump_run_form",
+      "sequence": 2,
+      "active": true,
+      "parent_ids": {
+        "@ref": "cupqc_root_menu"
+      }
+    },
+    "vacuum_pump_run_batch_menu": {
+      "name": "vacuum_pump_run_batch_menu",
+      "display_name": "抽真空检测明细",
+      "model": "vacuum_pump_run_batch",
+      "view": "vacuum_pump_run_batch_grid,vacuum_pump_run_batch_search,vacuum_pump_run_batch_form",
+      "sequence": 3,
+      "active": true,
+      "parent_ids": {
+        "@ref": "cupqc_root_menu"
+      }
+    },
+    "temp_drop_test_menu": {
+      "name": "temp_drop_test_menu",
+      "display_name": "温降测试",
+      "model": "temp_drop_test",
+      "view": "temp_drop_test_grid,temp_drop_test_search,temp_drop_test_form",
+      "sequence": 4,
+      "active": true,
+      "parent_ids": {
+        "@ref": "cupqc_root_menu"
+      }
+    },
+    "first_article_confirm_menu": {
+      "name": "first_article_confirm_menu",
+      "display_name": "首件确认",
+      "model": "first_article_confirm",
+      "view": "first_article_confirm_grid,first_article_confirm_search,first_article_confirm_form",
+      "sequence": 5,
+      "active": true,
+      "parent_ids": {
+        "@ref": "cupqc_root_menu"
+      }
+    }
+  }
+}

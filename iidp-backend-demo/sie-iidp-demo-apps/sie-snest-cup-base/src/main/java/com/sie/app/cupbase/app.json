@@ -1,0 +1,24 @@
+{
+  "name": "cupbase",
+  "displayName": "保温杯-基础数据",
+  "author": "zjf",
+  "company": "sie",
+  "category": "MES",
+  "product": "保温杯生产管理系统",
+  "description": "保温杯生产管理系统：产品SKU、设备模具与编码序列",
+  "summary": "保温杯-基础数据",
+  "type": "SDK",
+  "tag": "master",
+  "version": "0.0.1",
+  "resolved": "com.sie.app.cupbase",
+  "dependencies": [],
+  "application": true,
+  "icon": null,
+  "license": "LGPL 3.0",
+  "view": [
+    "product-sku-view.json",
+    "equipment-mold-view.json",
+    "cup-sequence-view.json"
+  ],
+  "data": []
+}

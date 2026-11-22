@@ -1,0 +1,146 @@
+{
+  "views": {
+    "vacuum_pump_run_batch_grid": {
+      "body": {
+        "buttons": [
+          {
+            "action": "preview",
+            "auth": "read",
+            "name": "详情"
+          },
+          {
+            "action": "edit",
+            "auth": "update",
+            "name": "编辑"
+          }
+        ],
+        "columns": [
+          {
+            "displayName": "炉次",
+            "name": "run"
+          },
+          {
+            "displayName": "生产批次",
+            "name": "batch"
+          },
+          {
+            "displayName": "真空度读数",
+            "name": "vacuumReading"
+          },
+          {
+            "displayName": "单位",
+            "name": "vacuumUnit"
+          },
+          {
+            "displayName": "检测结果",
+            "name": "testResult"
+          },
+          {
+            "displayName": "锁定",
+            "name": "lockFlag"
+          },
+          {
+            "displayName": "复测序号",
+            "name": "retestSeq"
+          },
+          {
+            "displayName": "检测人",
+            "name": "testedBy"
+          },
+          {
+            "displayName": "检测时间",
+            "name": "testedAt"
+          }
+        ],
+        "tbar": [
+          {
+            "action": "create",
+            "auth": "create",
+            "name": "新增"
+          },
+          {
+            "action": "delete",
+            "auth": "delete",
+            "name": "删除"
+          }
+        ],
+        "type": "grid"
+      },
+      "mode": "primary",
+      "model": "vacuum_pump_run_batch",
+      "name": "抽真空检测明细-表格",
+      "type": "grid"
+    },
+    "vacuum_pump_run_batch_form": {
+      "body": {
+        "columns": [
+          {
+            "displayName": "炉次",
+            "name": "run"
+          },
+          {
+            "displayName": "生产批次",
+            "name": "batch"
+          },
+          {
+            "displayName": "真空度读数",
+            "name": "vacuumReading"
+          },
+          {
+            "displayName": "单位",
+            "name": "vacuumUnit"
+          },
+          {
+            "displayName": "检测结果",
+            "name": "testResult"
+          },
+          {
+            "displayName": "锁定",
+            "name": "lockFlag"
+          },
+          {
+            "displayName": "复测序号",
+            "name": "retestSeq"
+          },
+          {
+            "displayName": "检测人",
+            "name": "testedBy"
+          },
+          {
+            "displayName": "检测时间",
+            "name": "testedAt"
+          }
+        ],
+        "tabs": [],
+        "type": "form"
+      },
+      "mode": "primary",
+      "model": "vacuum_pump_run_batch",
+      "name": "抽真空检测明细-表单",
+      "type": "form"
+    },
+    "vacuum_pump_run_batch_search": {
+      "body": {
+        "columns": [
+          {
+            "displayName": "生产批次",
+            "name": "batch"
+          },
+          {
+            "displayName": "检测结果",
+            "name": "testResult"
+          },
+          {
+            "displayName": "锁定",
+            "name": "lockFlag"
+          }
+        ],
+        "type": "search"
+      },
+      "mode": "primary",
+      "model": "vacuum_pump_run_batch",
+      "name": "抽真空检测明细-搜索",
+      "type": "search"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "menus": {
+    "cuptrace_root_menu": {
+      "name": "cuptrace_root_menu",
+      "display_name": "保温杯-异常追溯",
+      "active": true,
+      "sequence": 13
+    },
+    "exception_disposition_menu": {
+      "name": "exception_disposition_menu",
+      "display_name": "异常处置",
+      "model": "exception_disposition",
+      "view": "exception_disposition_grid,exception_disposition_search,exception_disposition_form",
+      "sequence": 1,
+      "active": true,
+      "parent_ids": {
+        "@ref": "cuptrace_root_menu"
+      }
+    },
+    "material_lot_genealogy_menu": {
+      "name": "material_lot_genealogy_menu",
+      "display_name": "物料批次谱系",
+      "model": "material_lot_genealogy",
+      "view": "material_lot_genealogy_grid,material_lot_genealogy_search,material_lot_genealogy_form",
+      "sequence": 2,
+      "active": true,
+      "parent_ids": {
+        "@ref": "cuptrace_root_menu"
+      }
+    }
+  }
+}

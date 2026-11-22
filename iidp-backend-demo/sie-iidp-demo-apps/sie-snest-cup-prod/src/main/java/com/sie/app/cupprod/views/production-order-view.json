@@ -1,0 +1,194 @@
+{
+  "views": {
+    "production_order_grid": {
+      "body": {
+        "buttons": [
+          {
+            "action": "preview",
+            "auth": "read",
+            "name": "详情"
+          },
+          {
+            "action": "edit",
+            "auth": "update",
+            "name": "编辑"
+          }
+        ],
+        "columns": [
+          {
+            "displayName": "工单号",
+            "name": "orderNo",
+            "sortable": true
+          },
+          {
+            "displayName": "产品SKU",
+            "name": "sku"
+          },
+          {
+            "displayName": "计划数量",
+            "name": "planQty"
+          },
+          {
+            "displayName": "客户订单号",
+            "name": "customerOrderNo"
+          },
+          {
+            "displayName": "交期",
+            "name": "dueDate"
+          },
+          {
+            "displayName": "配件齐套",
+            "name": "accessoryReadyFlag"
+          },
+          {
+            "displayName": "状态",
+            "name": "status"
+          }
+        ],
+        "tbar": [
+          {
+            "action": "create",
+            "auth": "create",
+            "name": "新增"
+          },
+          {
+            "action": "delete",
+            "auth": "delete",
+            "name": "删除"
+          }
+        ],
+        "type": "grid"
+      },
+      "mode": "primary",
+      "model": "production_order",
+      "name": "生产工单-表格",
+      "type": "grid"
+    },
+    "production_order_form": {
+      "body": {
+        "columns": [
+          {
+            "displayName": "工单号",
+            "name": "orderNo",
+            "sortable": true
+          },
+          {
+            "displayName": "产品SKU",
+            "name": "sku"
+          },
+          {
+            "displayName": "计划数量",
+            "name": "planQty"
+          },
+          {
+            "displayName": "客户订单号",
+            "name": "customerOrderNo"
+          },
+          {
+            "displayName": "交期",
+            "name": "dueDate"
+          },
+          {
+            "displayName": "配件齐套",
+            "name": "accessoryReadyFlag"
+          },
+          {
+            "displayName": "状态",
+            "name": "status"
+          }
+        ],
+        "tabs": [
+          {
+            "header": "生产批次",
+            "body": {
+              "buttons": [
+                {
+                  "action": "updateEr",
+                  "auth": "update",
+                  "name": "编辑"
+                }
+              ],
+              "columns": [
+                {
+                  "displayName": "批次码",
+                  "name": "batchCode"
+                },
+                {
+                  "displayName": "当前工序",
+                  "name": "currentProcess"
+                },
+                {
+                  "displayName": "批次数量",
+                  "name": "batchQty"
+                },
+                {
+                  "displayName": "批次状态",
+                  "name": "status"
+                }
+              ],
+              "edit": {
+                "columns": [
+                  {
+                    "displayName": "批次码",
+                    "name": "batchCode"
+                  },
+                  {
+                    "displayName": "批次数量",
+                    "name": "batchQty"
+                  },
+                  {
+                    "displayName": "批次状态",
+                    "name": "status"
+                  }
+                ],
+                "type": "form"
+              },
+              "field": "batchList",
+              "type": "grid,form"
+            },
+            "tbar": [
+              {
+                "action": "createEr",
+                "auth": "create",
+                "name": "创建"
+              },
+              {
+                "action": "deleteEr",
+                "auth": "delete",
+                "name": "删除"
+              }
+            ]
+          }
+        ],
+        "type": "form"
+      },
+      "mode": "primary",
+      "model": "production_order",
+      "name": "生产工单-表单",
+      "type": "form"
+    },
+    "production_order_search": {
+      "body": {
+        "columns": [
+          {
+            "displayName": "工单号",
+            "name": "orderNo"
+          },
+          {
+            "displayName": "产品SKU",
+            "name": "sku"
+          },
+          {
+            "displayName": "状态",
+            "name": "status"
+          }
+        ],
+        "type": "search"
+      },
+      "mode": "primary",
+      "model": "production_order",
+      "name": "生产工单-搜索",
+      "type": "search"
+    }
+  }
+}

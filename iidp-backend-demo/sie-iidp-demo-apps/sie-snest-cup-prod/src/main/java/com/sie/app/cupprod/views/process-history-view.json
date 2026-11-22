@@ -1,0 +1,174 @@
+{
+  "views": {
+    "process_history_grid": {
+      "body": {
+        "buttons": [
+          {
+            "action": "preview",
+            "auth": "read",
+            "name": "详情"
+          },
+          {
+            "action": "edit",
+            "auth": "update",
+            "name": "编辑"
+          }
+        ],
+        "columns": [
+          {
+            "displayName": "生产批次",
+            "name": "batch"
+          },
+          {
+            "displayName": "序号",
+            "name": "seqNo"
+          },
+          {
+            "displayName": "工序编码",
+            "name": "processCode"
+          },
+          {
+            "displayName": "工序名称",
+            "name": "processName"
+          },
+          {
+            "displayName": "设备",
+            "name": "equipment"
+          },
+          {
+            "displayName": "模具",
+            "name": "mold"
+          },
+          {
+            "displayName": "操作人",
+            "name": "operator"
+          },
+          {
+            "displayName": "合格数",
+            "name": "qualifiedQty"
+          },
+          {
+            "displayName": "不合格数",
+            "name": "unqualifiedQty"
+          },
+          {
+            "displayName": "开始时间",
+            "name": "startTime"
+          },
+          {
+            "displayName": "结束时间",
+            "name": "endTime"
+          },
+          {
+            "displayName": "结果",
+            "name": "result"
+          }
+        ],
+        "tbar": [
+          {
+            "action": "create",
+            "auth": "create",
+            "name": "新增"
+          },
+          {
+            "action": "delete",
+            "auth": "delete",
+            "name": "删除"
+          }
+        ],
+        "type": "grid"
+      },
+      "mode": "primary",
+      "model": "process_history",
+      "name": "工序履历-表格",
+      "type": "grid"
+    },
+    "process_history_form": {
+      "body": {
+        "columns": [
+          {
+            "displayName": "生产批次",
+            "name": "batch"
+          },
+          {
+            "displayName": "序号",
+            "name": "seqNo"
+          },
+          {
+            "displayName": "工序编码",
+            "name": "processCode"
+          },
+          {
+            "displayName": "工序名称",
+            "name": "processName"
+          },
+          {
+            "displayName": "设备",
+            "name": "equipment"
+          },
+          {
+            "displayName": "模具",
+            "name": "mold"
+          },
+          {
+            "displayName": "操作人",
+            "name": "operator"
+          },
+          {
+            "displayName": "合格数",
+            "name": "qualifiedQty"
+          },
+          {
+            "displayName": "不合格数",
+            "name": "unqualifiedQty"
+          },
+          {
+            "displayName": "开始时间",
+            "name": "startTime"
+          },
+          {
+            "displayName": "结束时间",
+            "name": "endTime"
+          },
+          {
+            "displayName": "结果",
+            "name": "result"
+          }
+        ],
+        "tabs": [],
+        "type": "form"
+      },
+      "mode": "primary",
+      "model": "process_history",
+      "name": "工序履历-表单",
+      "type": "form"
+    },
+    "process_history_search": {
+      "body": {
+        "columns": [
+          {
+            "displayName": "生产批次",
+            "name": "batch"
+          },
+          {
+            "displayName": "工序名称",
+            "name": "processName"
+          },
+          {
+            "displayName": "操作人",
+            "name": "operator"
+          },
+          {
+            "displayName": "结果",
+            "name": "result"
+          }
+        ],
+        "type": "search"
+      },
+      "mode": "primary",
+      "model": "process_history",
+      "name": "工序履历-搜索",
+      "type": "search"
+    }
+  }
+}

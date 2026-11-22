@@ -1,0 +1,25 @@
+{
+  "name": "cuptrace",
+  "displayName": "保温杯-异常追溯",
+  "author": "zjf",
+  "company": "sie",
+  "category": "MES",
+  "product": "保温杯生产管理系统",
+  "description": "保温杯生产管理系统：异常处置与物料批次谱系",
+  "summary": "保温杯-异常追溯",
+  "type": "SDK",
+  "tag": "master",
+  "version": "0.0.1",
+  "resolved": "com.sie.app.cuptrace",
+  "dependencies": [
+    "cupprod"
+  ],
+  "application": true,
+  "icon": null,
+  "license": "LGPL 3.0",
+  "view": [
+    "exception-disposition-view.json",
+    "material-lot-genealogy-view.json"
+  ],
+  "data": []
+}

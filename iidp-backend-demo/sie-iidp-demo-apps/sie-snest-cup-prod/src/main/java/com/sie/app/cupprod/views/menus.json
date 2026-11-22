@@ -1,0 +1,43 @@
+{
+  "menus": {
+    "cupprod_root_menu": {
+      "name": "cupprod_root_menu",
+      "display_name": "保温杯-生产执行",
+      "active": true,
+      "sequence": 11
+    },
+    "production_order_menu": {
+      "name": "production_order_menu",
+      "display_name": "生产工单",
+      "model": "production_order",
+      "view": "production_order_grid,production_order_search,production_order_form",
+      "sequence": 1,
+      "active": true,
+      "parent_ids": {
+        "@ref": "cupprod_root_menu"
+      }
+    },
+    "production_batch_menu": {
+      "name": "production_batch_menu",
+      "display_name": "生产批次",
+      "model": "production_batch",
+      "view": "production_batch_grid,production_batch_search,production_batch_form",
+      "sequence": 2,
+      "active": true,
+      "parent_ids": {
+        "@ref": "cupprod_root_menu"
+      }
+    },
+    "process_history_menu": {
+      "name": "process_history_menu",
+      "display_name": "工序履历",
+      "model": "process_history",
+      "view": "process_history_grid,process_history_search,process_history_form",
+      "sequence": 3,
+      "active": true,
+      "parent_ids": {
+        "@ref": "cupprod_root_menu"
+      }
+    }
+  }
+}

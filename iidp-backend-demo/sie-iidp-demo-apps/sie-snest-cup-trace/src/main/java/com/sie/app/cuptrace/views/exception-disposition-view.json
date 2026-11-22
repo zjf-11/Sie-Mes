@@ -1,0 +1,166 @@
+{
+  "views": {
+    "exception_disposition_grid": {
+      "body": {
+        "buttons": [
+          {
+            "action": "preview",
+            "auth": "read",
+            "name": "详情"
+          },
+          {
+            "action": "edit",
+            "auth": "update",
+            "name": "编辑"
+          }
+        ],
+        "columns": [
+          {
+            "displayName": "生产批次",
+            "name": "batch"
+          },
+          {
+            "displayName": "发生工序",
+            "name": "processCode"
+          },
+          {
+            "displayName": "异常类型",
+            "name": "exceptionType"
+          },
+          {
+            "displayName": "来源记录",
+            "name": "sourceRecordId"
+          },
+          {
+            "displayName": "来源类型",
+            "name": "sourceRecordType"
+          },
+          {
+            "displayName": "是否锁定",
+            "name": "lockFlag"
+          },
+          {
+            "displayName": "处置方式",
+            "name": "disposition"
+          },
+          {
+            "displayName": "处置人",
+            "name": "dispositionBy"
+          },
+          {
+            "displayName": "处置时间",
+            "name": "dispositionAt"
+          },
+          {
+            "displayName": "复测结果",
+            "name": "retestResult"
+          },
+          {
+            "displayName": "是否解锁",
+            "name": "unlockFlag"
+          }
+        ],
+        "tbar": [
+          {
+            "action": "create",
+            "auth": "create",
+            "name": "新增"
+          },
+          {
+            "action": "delete",
+            "auth": "delete",
+            "name": "删除"
+          }
+        ],
+        "type": "grid"
+      },
+      "mode": "primary",
+      "model": "exception_disposition",
+      "name": "异常处置-表格",
+      "type": "grid"
+    },
+    "exception_disposition_form": {
+      "body": {
+        "columns": [
+          {
+            "displayName": "生产批次",
+            "name": "batch"
+          },
+          {
+            "displayName": "发生工序",
+            "name": "processCode"
+          },
+          {
+            "displayName": "异常类型",
+            "name": "exceptionType"
+          },
+          {
+            "displayName": "来源记录",
+            "name": "sourceRecordId"
+          },
+          {
+            "displayName": "来源类型",
+            "name": "sourceRecordType"
+          },
+          {
+            "displayName": "是否锁定",
+            "name": "lockFlag"
+          },
+          {
+            "displayName": "处置方式",
+            "name": "disposition"
+          },
+          {
+            "displayName": "处置人",
+            "name": "dispositionBy"
+          },
+          {
+            "displayName": "处置时间",
+            "name": "dispositionAt"
+          },
+          {
+            "displayName": "复测结果",
+            "name": "retestResult"
+          },
+          {
+            "displayName": "是否解锁",
+            "name": "unlockFlag"
+          }
+        ],
+        "tabs": [],
+        "type": "form"
+      },
+      "mode": "primary",
+      "model": "exception_disposition",
+      "name": "异常处置-表单",
+      "type": "form"
+    },
+    "exception_disposition_search": {
+      "body": {
+        "columns": [
+          {
+            "displayName": "生产批次",
+            "name": "batch"
+          },
+          {
+            "displayName": "异常类型",
+            "name": "exceptionType"
+          },
+          {
+            "displayName": "处置方式",
+            "name": "disposition"
+          },
+          {
+            "displayName": "是否解锁",
+            "name": "unlockFlag"
+          }
+        ],
+        "type": "search"
+      },
+      "mode": "primary",
+      "model": "exception_disposition",
+      "name": "异常处置-搜索",
+      "type": "search"
+    }
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "views": {
+    "temp_drop_test_grid": {
+      "body": {
+        "buttons": [
+          {
+            "action": "preview",
+            "auth": "read",
+            "name": "详情"
+          },
+          {
+            "action": "edit",
+            "auth": "update",
+            "name": "编辑"
+          }
+        ],
+        "columns": [
+          {
+            "displayName": "生产批次",
+            "name": "batch"
+          },
+          {
+            "displayName": "测试类型",
+            "name": "testType"
+          },
+          {
+            "displayName": "触发类型",
+            "name": "triggerType"
+          },
+          {
+            "displayName": "测试序号",
+            "name": "testSeq"
+          },
+          {
+            "displayName": "起始温度",
+            "name": "startTemp"
+          },
+          {
+            "displayName": "结束温度",
+            "name": "endTemp"
+          },
+          {
+            "displayName": "判定结果",
+            "name": "result"
+          },
+          {
+            "displayName": "测试人",
+            "name": "testedBy"
+          },
+          {
+            "displayName": "测试时间",
+            "name": "testedAt"
+          }
+        ],
+        "tbar": [
+          {
+            "action": "create",
+            "auth": "create",
+            "name": "新增"
+          },
+          {
+            "action": "delete",
+            "auth": "delete",
+            "name": "删除"
+          }
+        ],
+        "type": "grid"
+      },
+      "mode": "primary",
+      "model": "temp_drop_test",
+      "name": "温降测试-表格",
+      "type": "grid"
+    },
+    "temp_drop_test_form": {
+      "body": {
+        "columns": [
+          {
+            "displayName": "生产批次",
+            "name": "batch"
+          },
+          {
+            "displayName": "测试类型",
+            "name": "testType"
+          },
+          {
+            "displayName": "触发类型",
+            "name": "triggerType"
+          },
+          {
+            "displayName": "测试序号",
+            "name": "testSeq"
+          },
+          {
+            "displayName": "起始温度",
+            "name": "startTemp"
+          },
+          {
+            "displayName": "结束温度",
+            "name": "endTemp"
+          },
+          {
+            "displayName": "判定结果",
+            "name": "result"
+          },
+          {
+            "displayName": "测试人",
+            "name": "testedBy"
+          },
+          {
+            "displayName": "测试时间",
+            "name": "testedAt"
+          }
+        ],
+        "tabs": [],
+        "type": "form"
+      },
+      "mode": "primary",
+      "model": "temp_drop_test",
+      "name": "温降测试-表单",
+      "type": "form"
+    },
+    "temp_drop_test_search": {
+      "body": {
+        "columns": [
+          {
+            "displayName": "生产批次",
+            "name": "batch"
+          },
+          {
+            "displayName": "测试类型",
+            "name": "testType"
+          },
+          {
+            "displayName": "判定结果",
+            "name": "result"
+          }
+        ],
+        "type": "search"
+      },
+      "mode": "primary",
+      "model": "temp_drop_test",
+      "name": "温降测试-搜索",
+      "type": "search"
+    }
+  }
+}

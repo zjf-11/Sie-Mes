@@ -1,0 +1,138 @@
+{
+  "views": {
+    "first_article_confirm_grid": {
+      "body": {
+        "buttons": [
+          {
+            "action": "preview",
+            "auth": "read",
+            "name": "详情"
+          },
+          {
+            "action": "edit",
+            "auth": "update",
+            "name": "编辑"
+          }
+        ],
+        "columns": [
+          {
+            "displayName": "生产批次",
+            "name": "batch"
+          },
+          {
+            "displayName": "工序编码",
+            "name": "processCode"
+          },
+          {
+            "displayName": "版次/色号",
+            "name": "versionNo"
+          },
+          {
+            "displayName": "首件照片",
+            "name": "photoUrl"
+          },
+          {
+            "displayName": "确认人",
+            "name": "confirmedBy"
+          },
+          {
+            "displayName": "确认时间",
+            "name": "confirmedAt"
+          },
+          {
+            "displayName": "确认结果",
+            "name": "result"
+          },
+          {
+            "displayName": "备注",
+            "name": "remark"
+          }
+        ],
+        "tbar": [
+          {
+            "action": "create",
+            "auth": "create",
+            "name": "新增"
+          },
+          {
+            "action": "delete",
+            "auth": "delete",
+            "name": "删除"
+          }
+        ],
+        "type": "grid"
+      },
+      "mode": "primary",
+      "model": "first_article_confirm",
+      "name": "首件确认-表格",
+      "type": "grid"
+    },
+    "first_article_confirm_form": {
+      "body": {
+        "columns": [
+          {
+            "displayName": "生产批次",
+            "name": "batch"
+          },
+          {
+            "displayName": "工序编码",
+            "name": "processCode"
+          },
+          {
+            "displayName": "版次/色号",
+            "name": "versionNo"
+          },
+          {
+            "displayName": "首件照片",
+            "name": "photoUrl"
+          },
+          {
+            "displayName": "确认人",
+            "name": "confirmedBy"
+          },
+          {
+            "displayName": "确认时间",
+            "name": "confirmedAt"
+          },
+          {
+            "displayName": "确认结果",
+            "name": "result"
+          },
+          {
+            "displayName": "备注",
+            "name": "remark"
+          }
+        ],
+        "tabs": [],
+        "type": "form"
+      },
+      "mode": "primary",
+      "model": "first_article_confirm",
+      "name": "首件确认-表单",
+      "type": "form"
+    },
+    "first_article_confirm_search": {
+      "body": {
+        "columns": [
+          {
+            "displayName": "生产批次",
+            "name": "batch"
+          },
+          {
+            "displayName": "工序编码",
+            "name": "processCode"
+          },
+          {
+            "displayName": "确认结果",
+            "name": "result"
+          }
+        ],
+        "type": "search"
+      },
+      "mode": "primary",
+      "model": "first_article_confirm",
+      "name": "首件确认-搜索",
+      "type": "search"
+    }
+  }
+}
