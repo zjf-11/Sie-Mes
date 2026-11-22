@@ -20,3 +20,5 @@ logs/
 *.log
 
 __pycache__/
+# Word 打开时的临时锁文件
+~\$*
