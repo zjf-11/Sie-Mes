@@ -29,7 +29,7 @@ import java.util.List;
 public class VacuumPumpRun extends BaseModel<VacuumPumpRun> {
 
     @Validate.Unique(properties = {"runNo"}, message = "炉次号已存在！")
-    @Property(displayName = "炉次号", unique = true)
+    @Property(displayName = "炉次号", unique = true, displayForModel = true)
     private String runNo;
 
     @ManyToOne(displayName = "真空炉设备")

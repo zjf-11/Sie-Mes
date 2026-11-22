@@ -18,3 +18,5 @@ build/
 .runtime/
 logs/
 *.log
+
+__pycache__/

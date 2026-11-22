@@ -79,6 +79,8 @@ def field_java(f, classes):
         ann.append('displayName = "%s"' % disp)
         if opts.get("unique"):
             ann.append("unique = true")
+        if opts.get("display"):
+            ann.append("displayForModel = true")
         if opts.get("len"):
             ann.append("length = %d" % opts["len"])
         if opts.get("default") is not None:

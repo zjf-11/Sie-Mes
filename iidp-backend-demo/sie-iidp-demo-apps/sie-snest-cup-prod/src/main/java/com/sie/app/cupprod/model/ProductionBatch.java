@@ -29,7 +29,7 @@ import java.util.List;
 public class ProductionBatch extends BaseModel<ProductionBatch> {
 
     @Validate.Unique(properties = {"batchCode"}, message = "批次码已存在！")
-    @Property(displayName = "批次码", unique = true)
+    @Property(displayName = "批次码", unique = true, displayForModel = true)
     private String batchCode;
 
     @ManyToOne(displayName = "生产工单")

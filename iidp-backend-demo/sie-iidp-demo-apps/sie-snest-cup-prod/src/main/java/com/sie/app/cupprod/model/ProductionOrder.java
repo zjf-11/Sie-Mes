@@ -29,7 +29,7 @@ import java.util.List;
 public class ProductionOrder extends BaseModel<ProductionOrder> {
 
     @Validate.Unique(properties = {"orderNo"}, message = "工单号已存在！")
-    @Property(displayName = "工单号", unique = true)
+    @Property(displayName = "工单号", unique = true, displayForModel = true)
     private String orderNo;
 
     @ManyToOne(displayName = "产品SKU")

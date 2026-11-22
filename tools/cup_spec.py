@@ -185,7 +185,7 @@ APPS = [
                     ("状态", "status", {}),
                 ],
                 "fields": [
-                    f("skuCode", "str", "SKU编码", unique=True),
+                    f("skuCode", "str", "SKU编码", unique=True, display=True),
                     f("productName", "str", "产品名称", notblank=True),
                     f("capacityMl", "int", "容量(ml)"),
                     f("caliber", "str", "杯口口径"),
@@ -228,7 +228,7 @@ APPS = [
                     ("类型", "assetType", {}),
                 ],
                 "fields": [
-                    f("assetCode", "str", "设备/模具编号", unique=True, notblank=True),
+                    f("assetCode", "str", "设备/模具编号", unique=True, notblank=True, display=True),
                     f("assetType", "sel", "类型", default="1", options=[("设备", "1"), ("模具", "2")]),
                     f("assetName", "str", "名称", notblank=True),
                     f("status", "sel", "状态", default="1",
@@ -284,7 +284,7 @@ APPS = [
                     ("状态", "status", {}),
                 ],
                 "fields": [
-                    f("orderNo", "str", "工单号", unique=True),
+                    f("orderNo", "str", "工单号", unique=True, display=True),
                     f("sku", "ref", "产品SKU", ref="ProductSku"),
                     f("planQty", "int", "计划数量"),
                     f("customerOrderNo", "str", "客户订单号"),
@@ -351,7 +351,7 @@ APPS = [
                     ("是否锁定", "lockFlag", {}),
                 ],
                 "fields": [
-                    f("batchCode", "str", "批次码", unique=True),
+                    f("batchCode", "str", "批次码", unique=True, display=True),
                     f("prodOrder", "ref", "生产工单", ref="ProductionOrder"),
                     f("parentBatch", "ref", "父批次", ref="ProductionBatch"),
                     f("sku", "ref", "产品SKU", ref="ProductSku"),
@@ -578,7 +578,7 @@ APPS = [
                     ("炉次状态", "runStatus", {}),
                 ],
                 "fields": [
-                    f("runNo", "str", "炉次号", unique=True),
+                    f("runNo", "str", "炉次号", unique=True, display=True),
                     f("equipment", "ref", "真空炉设备", ref="EquipmentMold"),
                     f("vacuumTemp", "dec", "抽真空温度(℃)"),
                     f("vacuumDuration", "int", "抽真空时长(min)"),

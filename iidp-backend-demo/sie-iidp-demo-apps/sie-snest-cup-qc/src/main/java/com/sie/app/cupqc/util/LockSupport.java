@@ -12,7 +12,7 @@ import java.util.Date;
 /**
  * 批次锁定工具：置批次状态为锁定，并生成异常处置记录。
  *
- * 两个坑（已踩过）：
+ *
  * 1. 入参用批次 id 字符串而非 ProductionBatch 对象——RPC 传入的关联字段保存后不保证能还原成实体，
  *    直接依赖 item.getBatch() 会拿到 null 并静默跳过锁定逻辑。
  * 2. 更新批次用 BatchState.patch 增量更新——把整行实体交给 DbUtils.update 会尝试序列化

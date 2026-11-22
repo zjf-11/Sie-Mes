@@ -30,7 +30,7 @@ public class EquipmentMold extends BaseModel<EquipmentMold> {
 
     @Validate.NotBlank(message = "设备/模具编号不能为空！")
     @Validate.Unique(properties = {"assetCode"}, message = "设备/模具编号已存在！")
-    @Property(displayName = "设备/模具编号", unique = true)
+    @Property(displayName = "设备/模具编号", unique = true, displayForModel = true)
     private String assetCode;
 
     @Property(displayName = "类型", defaultValue = "1", widget = "select", length = 256)

@@ -29,7 +29,7 @@ import java.util.List;
 public class ProductSku extends BaseModel<ProductSku> {
 
     @Validate.Unique(properties = {"skuCode"}, message = "SKU编码已存在！")
-    @Property(displayName = "SKU编码", unique = true)
+    @Property(displayName = "SKU编码", unique = true, displayForModel = true)
     private String skuCode;
 
     @Validate.NotBlank(message = "产品名称不能为空！")
